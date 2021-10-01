@@ -70,7 +70,8 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.thôngTinNhânViênToolStripMenuItem});
             this.menuStripCuaTho.Location = new System.Drawing.Point(0, 0);
             this.menuStripCuaTho.Name = "menuStripCuaTho";
-            this.menuStripCuaTho.Size = new System.Drawing.Size(800, 28);
+            this.menuStripCuaTho.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStripCuaTho.Size = new System.Drawing.Size(600, 24);
             this.menuStripCuaTho.TabIndex = 0;
             // 
             // xEToolStripMenuItem
@@ -82,41 +83,42 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.suaThongTinXeToolStripMenuItem,
             this.thongKeSoXeToolStripMenuItem});
             this.xEToolStripMenuItem.Name = "xEToolStripMenuItem";
-            this.xEToolStripMenuItem.Size = new System.Drawing.Size(40, 24);
+            this.xEToolStripMenuItem.Size = new System.Drawing.Size(32, 20);
             this.xEToolStripMenuItem.Text = "Xe";
+            this.xEToolStripMenuItem.Click += new System.EventHandler(this.xEToolStripMenuItem_Click);
             // 
             // danhSachXeToolStripMenuItem
             // 
             this.danhSachXeToolStripMenuItem.Name = "danhSachXeToolStripMenuItem";
-            this.danhSachXeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.danhSachXeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.danhSachXeToolStripMenuItem.Text = "Danh sách xe";
             this.danhSachXeToolStripMenuItem.Click += new System.EventHandler(this.danhSachXeToolStripMenuItem_Click);
             // 
             // themXeToolStripMenuItem
             // 
             this.themXeToolStripMenuItem.Name = "themXeToolStripMenuItem";
-            this.themXeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.themXeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.themXeToolStripMenuItem.Text = "Thêm xe";
             this.themXeToolStripMenuItem.Click += new System.EventHandler(this.themXeToolStripMenuItem_Click);
             // 
             // traXeToolStripMenuItem
             // 
             this.traXeToolStripMenuItem.Name = "traXeToolStripMenuItem";
-            this.traXeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.traXeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.traXeToolStripMenuItem.Text = "Trả xe";
             this.traXeToolStripMenuItem.Click += new System.EventHandler(this.traXeToolStripMenuItem_Click);
             // 
             // suaThongTinXeToolStripMenuItem
             // 
             this.suaThongTinXeToolStripMenuItem.Name = "suaThongTinXeToolStripMenuItem";
-            this.suaThongTinXeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.suaThongTinXeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suaThongTinXeToolStripMenuItem.Text = "Sửa thông tin xe";
             this.suaThongTinXeToolStripMenuItem.Click += new System.EventHandler(this.suaThongTinXeToolStripMenuItem_Click);
             // 
             // thongKeSoXeToolStripMenuItem
             // 
             this.thongKeSoXeToolStripMenuItem.Name = "thongKeSoXeToolStripMenuItem";
-            this.thongKeSoXeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thongKeSoXeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thongKeSoXeToolStripMenuItem.Text = "Thống kê số xe";
             this.thongKeSoXeToolStripMenuItem.Click += new System.EventHandler(this.thongKeSoXeToolStripMenuItem_Click);
             // 
@@ -127,27 +129,27 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.sửaThôngTinKHToolStripMenuItem,
             this.thêmKháchHàngToolStripMenuItem});
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
             // 
             // danhSáchKháchHàngToolStripMenuItem
             // 
             this.danhSáchKháchHàngToolStripMenuItem.Name = "danhSáchKháchHàngToolStripMenuItem";
-            this.danhSáchKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.danhSáchKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.danhSáchKháchHàngToolStripMenuItem.Text = "Danh sách khách hàng";
             this.danhSáchKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.danhSáchKháchHàngToolStripMenuItem_Click);
             // 
             // sửaThôngTinKHToolStripMenuItem
             // 
             this.sửaThôngTinKHToolStripMenuItem.Name = "sửaThôngTinKHToolStripMenuItem";
-            this.sửaThôngTinKHToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.sửaThôngTinKHToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.sửaThôngTinKHToolStripMenuItem.Text = "Sửa thông tin KH";
             this.sửaThôngTinKHToolStripMenuItem.Click += new System.EventHandler(this.sửaThôngTinKHToolStripMenuItem_Click);
             // 
             // thêmKháchHàngToolStripMenuItem
             // 
             this.thêmKháchHàngToolStripMenuItem.Name = "thêmKháchHàngToolStripMenuItem";
-            this.thêmKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.thêmKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.thêmKháchHàngToolStripMenuItem.Text = "Thêm khách hàng";
             this.thêmKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.thêmKháchHàngToolStripMenuItem_Click);
             // 
@@ -157,20 +159,20 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.chiTiếtToolStripMenuItem,
             this.tổngHợpDoanhThuToolStripMenuItem});
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.doanhThuToolStripMenuItem.Text = "Doanh thu";
             // 
             // chiTiếtToolStripMenuItem
             // 
             this.chiTiếtToolStripMenuItem.Name = "chiTiếtToolStripMenuItem";
-            this.chiTiếtToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.chiTiếtToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.chiTiếtToolStripMenuItem.Text = "Chi tiết";
             this.chiTiếtToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtToolStripMenuItem_Click);
             // 
             // tổngHợpDoanhThuToolStripMenuItem
             // 
             this.tổngHợpDoanhThuToolStripMenuItem.Name = "tổngHợpDoanhThuToolStripMenuItem";
-            this.tổngHợpDoanhThuToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.tổngHợpDoanhThuToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.tổngHợpDoanhThuToolStripMenuItem.Text = "Tổng hợp doanh thu";
             this.tổngHợpDoanhThuToolStripMenuItem.Click += new System.EventHandler(this.tổngHợpDoanhThuToolStripMenuItem_Click);
             // 
@@ -179,13 +181,13 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.giờLàmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tKBToolStripMenuItem});
             this.giờLàmToolStripMenuItem.Name = "giờLàmToolStripMenuItem";
-            this.giờLàmToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.giờLàmToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.giờLàmToolStripMenuItem.Text = "Giờ làm";
             // 
             // tKBToolStripMenuItem
             // 
             this.tKBToolStripMenuItem.Name = "tKBToolStripMenuItem";
-            this.tKBToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tKBToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
             this.tKBToolStripMenuItem.Text = "TKB";
             this.tKBToolStripMenuItem.Click += new System.EventHandler(this.tKBToolStripMenuItem_Click);
             // 
@@ -194,13 +196,13 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.thôngTinNhânViênToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.chiTiếtToolStripMenuItem1});
             this.thôngTinNhânViênToolStripMenuItem.Name = "thôngTinNhânViênToolStripMenuItem";
-            this.thôngTinNhânViênToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.thôngTinNhânViênToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.thôngTinNhânViênToolStripMenuItem.Text = "Thông tin nhân viên";
             // 
             // chiTiếtToolStripMenuItem1
             // 
             this.chiTiếtToolStripMenuItem1.Name = "chiTiếtToolStripMenuItem1";
-            this.chiTiếtToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.chiTiếtToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.chiTiếtToolStripMenuItem1.Text = "Chi tiết";
             this.chiTiếtToolStripMenuItem1.Click += new System.EventHandler(this.chiTiếtToolStripMenuItem1_Click);
             // 
@@ -209,9 +211,10 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.buttonDangXuat.BackColor = System.Drawing.Color.Red;
             this.buttonDangXuat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDangXuat.ForeColor = System.Drawing.Color.White;
-            this.buttonDangXuat.Location = new System.Drawing.Point(676, 0);
+            this.buttonDangXuat.Location = new System.Drawing.Point(507, 0);
+            this.buttonDangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonDangXuat.Name = "buttonDangXuat";
-            this.buttonDangXuat.Size = new System.Drawing.Size(123, 27);
+            this.buttonDangXuat.Size = new System.Drawing.Size(92, 22);
             this.buttonDangXuat.TabIndex = 1;
             this.buttonDangXuat.Text = "Đăng xuất";
             this.buttonDangXuat.UseVisualStyleBackColor = false;
@@ -222,9 +225,10 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.buttonXoaTK.BackColor = System.Drawing.Color.Red;
             this.buttonXoaTK.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoaTK.ForeColor = System.Drawing.Color.White;
-            this.buttonXoaTK.Location = new System.Drawing.Point(12, 411);
+            this.buttonXoaTK.Location = new System.Drawing.Point(9, 334);
+            this.buttonXoaTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonXoaTK.Name = "buttonXoaTK";
-            this.buttonXoaTK.Size = new System.Drawing.Size(140, 27);
+            this.buttonXoaTK.Size = new System.Drawing.Size(105, 22);
             this.buttonXoaTK.TabIndex = 2;
             this.buttonXoaTK.Text = "Xóa tài khoản";
             this.buttonXoaTK.UseVisualStyleBackColor = false;
@@ -235,9 +239,10 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.buttonCheckIn.BackColor = System.Drawing.Color.Navy;
             this.buttonCheckIn.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCheckIn.ForeColor = System.Drawing.Color.White;
-            this.buttonCheckIn.Location = new System.Drawing.Point(12, 42);
+            this.buttonCheckIn.Location = new System.Drawing.Point(9, 34);
+            this.buttonCheckIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCheckIn.Name = "buttonCheckIn";
-            this.buttonCheckIn.Size = new System.Drawing.Size(140, 27);
+            this.buttonCheckIn.Size = new System.Drawing.Size(105, 22);
             this.buttonCheckIn.TabIndex = 3;
             this.buttonCheckIn.Text = "CHECK IN";
             this.buttonCheckIn.UseVisualStyleBackColor = false;
@@ -248,9 +253,10 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.buttonCheckOut.BackColor = System.Drawing.Color.Navy;
             this.buttonCheckOut.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCheckOut.ForeColor = System.Drawing.Color.White;
-            this.buttonCheckOut.Location = new System.Drawing.Point(12, 85);
+            this.buttonCheckOut.Location = new System.Drawing.Point(9, 69);
+            this.buttonCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCheckOut.Name = "buttonCheckOut";
-            this.buttonCheckOut.Size = new System.Drawing.Size(140, 27);
+            this.buttonCheckOut.Size = new System.Drawing.Size(105, 22);
             this.buttonCheckOut.TabIndex = 4;
             this.buttonCheckOut.Text = "CHECK OUT";
             this.buttonCheckOut.UseVisualStyleBackColor = false;
@@ -259,9 +265,11 @@ namespace BaiGiuXeVer2.Forms.Workers
             // groupBoxChart
             // 
             this.groupBoxChart.Controls.Add(this.labelTime);
-            this.groupBoxChart.Location = new System.Drawing.Point(170, 42);
+            this.groupBoxChart.Location = new System.Drawing.Point(128, 34);
+            this.groupBoxChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBoxChart.Name = "groupBoxChart";
-            this.groupBoxChart.Size = new System.Drawing.Size(618, 396);
+            this.groupBoxChart.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxChart.Size = new System.Drawing.Size(464, 322);
             this.groupBoxChart.TabIndex = 5;
             this.groupBoxChart.TabStop = false;
             // 
@@ -269,9 +277,10 @@ namespace BaiGiuXeVer2.Forms.Workers
             // 
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.Location = new System.Drawing.Point(196, 159);
+            this.labelTime.Location = new System.Drawing.Point(147, 129);
+            this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(289, 55);
+            this.labelTime.Size = new System.Drawing.Size(230, 43);
             this.labelTime.TabIndex = 0;
             this.labelTime.Text = "00:00:00 AM";
             // 
@@ -281,10 +290,10 @@ namespace BaiGiuXeVer2.Forms.Workers
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.groupBoxChart);
             this.Controls.Add(this.buttonCheckOut);
             this.Controls.Add(this.buttonCheckIn);
@@ -292,6 +301,7 @@ namespace BaiGiuXeVer2.Forms.Workers
             this.Controls.Add(this.buttonDangXuat);
             this.Controls.Add(this.menuStripCuaTho);
             this.MainMenuStrip = this.menuStripCuaTho;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);

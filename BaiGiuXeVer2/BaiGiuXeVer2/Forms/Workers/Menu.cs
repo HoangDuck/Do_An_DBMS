@@ -64,8 +64,8 @@ namespace BaiGiuXeVer2.Forms.Workers
 
         private void thêmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registers.RegisterUsers form = new Registers.RegisterUsers(false);
-            form.Show();
+            // Registers.RegisterUsers form = new Registers.RegisterUsers(false);
+            //form.Show();
         }
 
         //Menu doanh thu
@@ -216,6 +216,11 @@ namespace BaiGiuXeVer2.Forms.Workers
         private void timerTG_Tick(object sender, EventArgs e)
         {
             labelTime.Text = DateTime.Now.ToString("T");
+        }
+
+        private void xEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

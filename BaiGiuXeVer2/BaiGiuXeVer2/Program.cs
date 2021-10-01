@@ -16,7 +16,7 @@ namespace BaiGiuXeVer2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.Login.Login());
+            Application.Run(new Forms.Staff.mainFormStaff());
         }
     }
 }
