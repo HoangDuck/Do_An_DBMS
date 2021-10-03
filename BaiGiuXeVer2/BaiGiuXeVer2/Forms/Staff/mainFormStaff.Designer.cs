@@ -32,26 +32,30 @@ namespace BaiGiuXeVer2.Forms.Staff
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainFormStaff));
             this.btnLogOut = new Guna.UI.WinForms.GunaButton();
             this.btnDoiMK = new Guna.UI.WinForms.GunaButton();
-            this.btnQuanLySach = new Guna.UI.WinForms.GunaButton();
+            this.btnNhanXe = new Guna.UI.WinForms.GunaButton();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label_Name = new System.Windows.Forms.Label();
             this.btnThongTin = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaGradientPanel3 = new Guna.UI.WinForms.GunaGradientPanel();
             this.gunaGradientPanel4 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.btnThongTinCaLam = new Guna.UI.WinForms.GunaButton();
+            this.btnLichLamViec = new Guna.UI.WinForms.GunaButton();
+            this.btnXeTrongbai = new Guna.UI.WinForms.GunaButton();
+            this.btnXeRaVao = new Guna.UI.WinForms.GunaButton();
             this.Avatar_Pic = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
-            this.gunaGradientPanel2 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.shiftInformationUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.shiftInformationUC();
+            this.calendarUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.calendarUC();
+            this.showListCarInPackUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.showListCarInPackUC();
             this.checkInOutCar1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.checkInOutCarUC();
             this.receiveCarUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.receiveCarUC();
             this.editProfileUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.editProfileUC();
             this.changePasswordUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.changePasswordUC();
-            this.editProfileUC2 = new BaiGiuXeVer2.Forms.Staff.StaffUC.editProfileUC();
-            this.showListCarInPackUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.showListCarInPackUC();
+            this.gunaGradientPanel2 = new Guna.UI.WinForms.GunaGradientPanel();
             this.gunaElipsePanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gunaGradientPanel3.SuspendLayout();
-            this.gunaGradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pic)).BeginInit();
             this.gunaGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -111,34 +115,36 @@ namespace BaiGiuXeVer2.Forms.Staff
             this.btnDoiMK.TabIndex = 5;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
-            // btnQuanLySach
+            // btnNhanXe
             // 
-            this.btnQuanLySach.AnimationHoverSpeed = 0.07F;
-            this.btnQuanLySach.AnimationSpeed = 0.03F;
-            this.btnQuanLySach.BackColor = System.Drawing.Color.Transparent;
-            this.btnQuanLySach.BaseColor = System.Drawing.Color.White;
-            this.btnQuanLySach.BorderColor = System.Drawing.Color.White;
-            this.btnQuanLySach.BorderSize = 3;
-            this.btnQuanLySach.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnQuanLySach.FocusedColor = System.Drawing.Color.Empty;
-            this.btnQuanLySach.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.btnQuanLySach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(150)))), ((int)(((byte)(156)))));
-            this.btnQuanLySach.Image = null;
-            this.btnQuanLySach.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnQuanLySach.Location = new System.Drawing.Point(-87, 322);
-            this.btnQuanLySach.Margin = new System.Windows.Forms.Padding(0);
-            this.btnQuanLySach.Name = "btnQuanLySach";
-            this.btnQuanLySach.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(133)))), ((int)(((byte)(231)))));
-            this.btnQuanLySach.OnHoverBorderColor = System.Drawing.Color.White;
-            this.btnQuanLySach.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnQuanLySach.OnHoverImage = null;
-            this.btnQuanLySach.OnPressedColor = System.Drawing.Color.Black;
-            this.btnQuanLySach.Radius = 40;
-            this.btnQuanLySach.Size = new System.Drawing.Size(427, 63);
-            this.btnQuanLySach.TabIndex = 3;
-            this.btnQuanLySach.Text = "Quản lý xe";
-            this.btnQuanLySach.TextOffsetX = 90;
+            this.btnNhanXe.AnimationHoverSpeed = 0.07F;
+            this.btnNhanXe.AnimationSpeed = 0.03F;
+            this.btnNhanXe.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhanXe.BaseColor = System.Drawing.Color.White;
+            this.btnNhanXe.BorderColor = System.Drawing.Color.White;
+            this.btnNhanXe.BorderSize = 3;
+            this.btnNhanXe.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnNhanXe.FocusedColor = System.Drawing.Color.Empty;
+            this.btnNhanXe.Font = new System.Drawing.Font("Leelawadee UI", 20F);
+            this.btnNhanXe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(150)))), ((int)(((byte)(156)))));
+            this.btnNhanXe.Image = null;
+            this.btnNhanXe.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnNhanXe.Location = new System.Drawing.Point(-87, 351);
+            this.btnNhanXe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnNhanXe.Name = "btnNhanXe";
+            this.btnNhanXe.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(133)))), ((int)(((byte)(231)))));
+            this.btnNhanXe.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btnNhanXe.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnNhanXe.OnHoverImage = null;
+            this.btnNhanXe.OnPressedColor = System.Drawing.Color.Black;
+            this.btnNhanXe.Radius = 40;
+            this.btnNhanXe.Size = new System.Drawing.Size(427, 63);
+            this.btnNhanXe.TabIndex = 3;
+            this.btnNhanXe.Text = "►Nhận xe";
+            this.btnNhanXe.TextOffsetX = 90;
+            this.btnNhanXe.Click += new System.EventHandler(this.btnNhanXe_Click);
             // 
             // gunaElipsePanel2
             // 
@@ -190,6 +196,7 @@ namespace BaiGiuXeVer2.Forms.Staff
             this.btnThongTin.TabIndex = 12;
             this.btnThongTin.Text = "Thông tin";
             this.btnThongTin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // panel1
             // 
@@ -197,7 +204,11 @@ namespace BaiGiuXeVer2.Forms.Staff
             this.panel1.Controls.Add(this.btnThongTin);
             this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnDoiMK);
-            this.panel1.Controls.Add(this.btnQuanLySach);
+            this.panel1.Controls.Add(this.btnThongTinCaLam);
+            this.panel1.Controls.Add(this.btnLichLamViec);
+            this.panel1.Controls.Add(this.btnXeTrongbai);
+            this.panel1.Controls.Add(this.btnXeRaVao);
+            this.panel1.Controls.Add(this.btnNhanXe);
             this.panel1.Controls.Add(this.Avatar_Pic);
             this.panel1.Controls.Add(this.gunaElipsePanel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -225,7 +236,6 @@ namespace BaiGiuXeVer2.Forms.Staff
             // 
             this.gunaGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel4.BackgroundImage")));
             this.gunaGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel4.Controls.Add(this.editProfileUC2);
             this.gunaGradientPanel4.GradientColor1 = System.Drawing.Color.White;
             this.gunaGradientPanel4.GradientColor2 = System.Drawing.Color.White;
             this.gunaGradientPanel4.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(218)))));
@@ -236,6 +246,122 @@ namespace BaiGiuXeVer2.Forms.Staff
             this.gunaGradientPanel4.Size = new System.Drawing.Size(1077, 20);
             this.gunaGradientPanel4.TabIndex = 99;
             this.gunaGradientPanel4.Text = "gunaGradientPanel4";
+            // 
+            // btnThongTinCaLam
+            // 
+            this.btnThongTinCaLam.AnimationHoverSpeed = 0.07F;
+            this.btnThongTinCaLam.AnimationSpeed = 0.03F;
+            this.btnThongTinCaLam.BackColor = System.Drawing.Color.Transparent;
+            this.btnThongTinCaLam.BaseColor = System.Drawing.Color.White;
+            this.btnThongTinCaLam.BorderColor = System.Drawing.Color.White;
+            this.btnThongTinCaLam.BorderSize = 3;
+            this.btnThongTinCaLam.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThongTinCaLam.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThongTinCaLam.Font = new System.Drawing.Font("Leelawadee UI", 20F);
+            this.btnThongTinCaLam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(150)))), ((int)(((byte)(156)))));
+            this.btnThongTinCaLam.Image = null;
+            this.btnThongTinCaLam.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThongTinCaLam.Location = new System.Drawing.Point(-87, 623);
+            this.btnThongTinCaLam.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnThongTinCaLam.Name = "btnThongTinCaLam";
+            this.btnThongTinCaLam.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(133)))), ((int)(((byte)(231)))));
+            this.btnThongTinCaLam.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btnThongTinCaLam.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnThongTinCaLam.OnHoverImage = null;
+            this.btnThongTinCaLam.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThongTinCaLam.Radius = 40;
+            this.btnThongTinCaLam.Size = new System.Drawing.Size(427, 63);
+            this.btnThongTinCaLam.TabIndex = 3;
+            this.btnThongTinCaLam.Text = "►Thông tin ca làm";
+            this.btnThongTinCaLam.TextOffsetX = 90;
+            this.btnThongTinCaLam.Click += new System.EventHandler(this.btnThongTinCaLam_Click);
+            // 
+            // btnLichLamViec
+            // 
+            this.btnLichLamViec.AnimationHoverSpeed = 0.07F;
+            this.btnLichLamViec.AnimationSpeed = 0.03F;
+            this.btnLichLamViec.BackColor = System.Drawing.Color.Transparent;
+            this.btnLichLamViec.BaseColor = System.Drawing.Color.White;
+            this.btnLichLamViec.BorderColor = System.Drawing.Color.White;
+            this.btnLichLamViec.BorderSize = 3;
+            this.btnLichLamViec.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLichLamViec.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLichLamViec.Font = new System.Drawing.Font("Leelawadee UI", 20F);
+            this.btnLichLamViec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(150)))), ((int)(((byte)(156)))));
+            this.btnLichLamViec.Image = null;
+            this.btnLichLamViec.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnLichLamViec.Location = new System.Drawing.Point(-87, 555);
+            this.btnLichLamViec.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnLichLamViec.Name = "btnLichLamViec";
+            this.btnLichLamViec.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(133)))), ((int)(((byte)(231)))));
+            this.btnLichLamViec.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btnLichLamViec.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnLichLamViec.OnHoverImage = null;
+            this.btnLichLamViec.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLichLamViec.Radius = 40;
+            this.btnLichLamViec.Size = new System.Drawing.Size(427, 63);
+            this.btnLichLamViec.TabIndex = 3;
+            this.btnLichLamViec.Text = "►Lịch làm việc";
+            this.btnLichLamViec.TextOffsetX = 90;
+            this.btnLichLamViec.Click += new System.EventHandler(this.btnLichLamViec_Click);
+            // 
+            // btnXeTrongbai
+            // 
+            this.btnXeTrongbai.AnimationHoverSpeed = 0.07F;
+            this.btnXeTrongbai.AnimationSpeed = 0.03F;
+            this.btnXeTrongbai.BackColor = System.Drawing.Color.Transparent;
+            this.btnXeTrongbai.BaseColor = System.Drawing.Color.White;
+            this.btnXeTrongbai.BorderColor = System.Drawing.Color.White;
+            this.btnXeTrongbai.BorderSize = 3;
+            this.btnXeTrongbai.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnXeTrongbai.FocusedColor = System.Drawing.Color.Empty;
+            this.btnXeTrongbai.Font = new System.Drawing.Font("Leelawadee UI", 20F);
+            this.btnXeTrongbai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(150)))), ((int)(((byte)(156)))));
+            this.btnXeTrongbai.Image = null;
+            this.btnXeTrongbai.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnXeTrongbai.Location = new System.Drawing.Point(-87, 487);
+            this.btnXeTrongbai.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnXeTrongbai.Name = "btnXeTrongbai";
+            this.btnXeTrongbai.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(133)))), ((int)(((byte)(231)))));
+            this.btnXeTrongbai.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btnXeTrongbai.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnXeTrongbai.OnHoverImage = null;
+            this.btnXeTrongbai.OnPressedColor = System.Drawing.Color.Black;
+            this.btnXeTrongbai.Radius = 40;
+            this.btnXeTrongbai.Size = new System.Drawing.Size(427, 63);
+            this.btnXeTrongbai.TabIndex = 3;
+            this.btnXeTrongbai.Text = "►Xe trong bãi";
+            this.btnXeTrongbai.TextOffsetX = 90;
+            this.btnXeTrongbai.Click += new System.EventHandler(this.btnXeTrongbai_Click);
+            // 
+            // btnXeRaVao
+            // 
+            this.btnXeRaVao.AnimationHoverSpeed = 0.07F;
+            this.btnXeRaVao.AnimationSpeed = 0.03F;
+            this.btnXeRaVao.BackColor = System.Drawing.Color.Transparent;
+            this.btnXeRaVao.BaseColor = System.Drawing.Color.White;
+            this.btnXeRaVao.BorderColor = System.Drawing.Color.White;
+            this.btnXeRaVao.BorderSize = 3;
+            this.btnXeRaVao.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnXeRaVao.FocusedColor = System.Drawing.Color.Empty;
+            this.btnXeRaVao.Font = new System.Drawing.Font("Leelawadee UI", 20F);
+            this.btnXeRaVao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(150)))), ((int)(((byte)(156)))));
+            this.btnXeRaVao.Image = null;
+            this.btnXeRaVao.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnXeRaVao.Location = new System.Drawing.Point(-87, 419);
+            this.btnXeRaVao.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnXeRaVao.Name = "btnXeRaVao";
+            this.btnXeRaVao.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(133)))), ((int)(((byte)(231)))));
+            this.btnXeRaVao.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btnXeRaVao.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnXeRaVao.OnHoverImage = null;
+            this.btnXeRaVao.OnPressedColor = System.Drawing.Color.Black;
+            this.btnXeRaVao.Radius = 40;
+            this.btnXeRaVao.Size = new System.Drawing.Size(427, 63);
+            this.btnXeRaVao.TabIndex = 3;
+            this.btnXeRaVao.Text = "►Xe ra - vào";
+            this.btnXeRaVao.TextOffsetX = 90;
+            this.btnXeRaVao.Click += new System.EventHandler(this.btnXeRaVao_Click);
             // 
             // Avatar_Pic
             // 
@@ -254,6 +380,8 @@ namespace BaiGiuXeVer2.Forms.Staff
             // 
             this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
             this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.shiftInformationUC1);
+            this.gunaGradientPanel1.Controls.Add(this.calendarUC1);
             this.gunaGradientPanel1.Controls.Add(this.showListCarInPackUC1);
             this.gunaGradientPanel1.Controls.Add(this.checkInOutCar1);
             this.gunaGradientPanel1.Controls.Add(this.receiveCarUC1);
@@ -271,19 +399,30 @@ namespace BaiGiuXeVer2.Forms.Staff
             this.gunaGradientPanel1.TabIndex = 3;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
             // 
-            // gunaGradientPanel2
+            // shiftInformationUC1
             // 
-            this.gunaGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel2.BackgroundImage")));
-            this.gunaGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel2.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(218)))));
-            this.gunaGradientPanel2.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel2.GradientColor3 = System.Drawing.Color.White;
-            this.gunaGradientPanel2.GradientColor4 = System.Drawing.Color.White;
-            this.gunaGradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.gunaGradientPanel2.Name = "gunaGradientPanel2";
-            this.gunaGradientPanel2.Size = new System.Drawing.Size(18, 800);
-            this.gunaGradientPanel2.TabIndex = 99;
-            this.gunaGradientPanel2.Text = "gunaGradientPanel2";
+            this.shiftInformationUC1.Location = new System.Drawing.Point(0, 0);
+            this.shiftInformationUC1.Name = "shiftInformationUC1";
+            this.shiftInformationUC1.Size = new System.Drawing.Size(1077, 800);
+            this.shiftInformationUC1.TabIndex = 104;
+            this.shiftInformationUC1.Visible = false;
+            // 
+            // calendarUC1
+            // 
+            this.calendarUC1.Location = new System.Drawing.Point(0, 0);
+            this.calendarUC1.Name = "calendarUC1";
+            this.calendarUC1.Size = new System.Drawing.Size(1077, 800);
+            this.calendarUC1.TabIndex = 103;
+            this.calendarUC1.Visible = false;
+            // 
+            // showListCarInPackUC1
+            // 
+            this.showListCarInPackUC1.BackColor = System.Drawing.SystemColors.Control;
+            this.showListCarInPackUC1.Location = new System.Drawing.Point(0, 0);
+            this.showListCarInPackUC1.Name = "showListCarInPackUC1";
+            this.showListCarInPackUC1.Size = new System.Drawing.Size(1077, 800);
+            this.showListCarInPackUC1.TabIndex = 102;
+            this.showListCarInPackUC1.Visible = false;
             // 
             // checkInOutCar1
             // 
@@ -323,22 +462,19 @@ namespace BaiGiuXeVer2.Forms.Staff
             this.changePasswordUC1.TabIndex = 2;
             this.changePasswordUC1.Visible = false;
             // 
-            // editProfileUC2
+            // gunaGradientPanel2
             // 
-            this.editProfileUC2.Location = new System.Drawing.Point(0, 0);
-            this.editProfileUC2.Name = "editProfileUC2";
-            this.editProfileUC2.Size = new System.Drawing.Size(1077, 800);
-            this.editProfileUC2.TabIndex = 0;
-            this.editProfileUC2.Visible = false;
-            // 
-            // showListCarInPackUC1
-            // 
-            this.showListCarInPackUC1.BackColor = System.Drawing.SystemColors.Control;
-            this.showListCarInPackUC1.Location = new System.Drawing.Point(0, 0);
-            this.showListCarInPackUC1.Name = "showListCarInPackUC1";
-            this.showListCarInPackUC1.Size = new System.Drawing.Size(1077, 800);
-            this.showListCarInPackUC1.TabIndex = 102;
-            this.showListCarInPackUC1.Visible = false;
+            this.gunaGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel2.BackgroundImage")));
+            this.gunaGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel2.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(218)))));
+            this.gunaGradientPanel2.GradientColor2 = System.Drawing.Color.White;
+            this.gunaGradientPanel2.GradientColor3 = System.Drawing.Color.White;
+            this.gunaGradientPanel2.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.gunaGradientPanel2.Name = "gunaGradientPanel2";
+            this.gunaGradientPanel2.Size = new System.Drawing.Size(18, 800);
+            this.gunaGradientPanel2.TabIndex = 99;
+            this.gunaGradientPanel2.Text = "gunaGradientPanel2";
             // 
             // mainFormStaff
             // 
@@ -350,10 +486,10 @@ namespace BaiGiuXeVer2.Forms.Staff
             this.Controls.Add(this.panel1);
             this.Name = "mainFormStaff";
             this.Text = "Nhân viên";
+            this.Load += new System.EventHandler(this.mainFormStaff_Load);
             this.gunaElipsePanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.gunaGradientPanel3.ResumeLayout(false);
-            this.gunaGradientPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pic)).EndInit();
             this.gunaGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -363,7 +499,7 @@ namespace BaiGiuXeVer2.Forms.Staff
         #endregion
         private Guna.UI.WinForms.GunaButton btnLogOut;
         private Guna.UI.WinForms.GunaButton btnDoiMK;
-        private Guna.UI.WinForms.GunaButton btnQuanLySach;
+        private Guna.UI.WinForms.GunaButton btnNhanXe;
         private Guna.UI.WinForms.GunaCirclePictureBox Avatar_Pic;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
         private System.Windows.Forms.Label label_Name;
@@ -375,9 +511,14 @@ namespace BaiGiuXeVer2.Forms.Staff
         private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel4;
         private StaffUC.changePasswordUC changePasswordUC1;
         private StaffUC.editProfileUC editProfileUC1;
-        private StaffUC.editProfileUC editProfileUC2;
         private StaffUC.receiveCarUC receiveCarUC1;
         private StaffUC.checkInOutCarUC checkInOutCar1;
         private StaffUC.showListCarInPackUC showListCarInPackUC1;
+        private StaffUC.calendarUC calendarUC1;
+        private Guna.UI.WinForms.GunaButton btnLichLamViec;
+        private Guna.UI.WinForms.GunaButton btnXeTrongbai;
+        private Guna.UI.WinForms.GunaButton btnXeRaVao;
+        private Guna.UI.WinForms.GunaButton btnThongTinCaLam;
+        private StaffUC.shiftInformationUC shiftInformationUC1;
     }
 }

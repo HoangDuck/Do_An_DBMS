@@ -103,3 +103,5 @@ C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Fo
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.checkInOutCarUC.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.showListCarInPackUC.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csprojAssemblyReference.cache
+C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.calendarUC.resources
+C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.shiftInformationUC.resources

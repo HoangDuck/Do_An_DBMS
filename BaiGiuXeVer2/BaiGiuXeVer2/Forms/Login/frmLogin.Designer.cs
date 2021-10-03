@@ -54,6 +54,8 @@ namespace BaiGiuXeVer2.Forms.Login
             this.textUser.TabIndex = 2;
             this.textUser.Text = "Username";
             this.textUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textUser.Enter += new System.EventHandler(this.textUser_Enter);
+            this.textUser.Leave += new System.EventHandler(this.textUser_Leave);
             // 
             // textPassword
             // 
@@ -70,6 +72,8 @@ namespace BaiGiuXeVer2.Forms.Login
             this.textPassword.TabIndex = 3;
             this.textPassword.Text = "Password";
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textPassword.Enter += new System.EventHandler(this.textPassword_Enter);
+            this.textPassword.Leave += new System.EventHandler(this.textPassword_Leave);
             // 
             // CheckBox_HienThiMK
             // 
@@ -83,6 +87,7 @@ namespace BaiGiuXeVer2.Forms.Login
             this.CheckBox_HienThiMK.Size = new System.Drawing.Size(150, 22);
             this.CheckBox_HienThiMK.TabIndex = 68;
             this.CheckBox_HienThiMK.Text = "Hiển thị mật khẩu";
+            this.CheckBox_HienThiMK.CheckedChanged += new System.EventHandler(this.CheckBox_HienThiMK_CheckedChanged);
             // 
             // rdoStaff
             // 
@@ -93,7 +98,7 @@ namespace BaiGiuXeVer2.Forms.Login
             this.rdoStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rdoStaff.Location = new System.Drawing.Point(87, 362);
             this.rdoStaff.Name = "rdoStaff";
-            this.rdoStaff.Size = new System.Drawing.Size(81, 20);
+            this.rdoStaff.Size = new System.Drawing.Size(92, 20);
             this.rdoStaff.TabIndex = 71;
             this.rdoStaff.Text = "Nhân viên";
             // 
@@ -106,7 +111,7 @@ namespace BaiGiuXeVer2.Forms.Login
             this.rdoManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rdoManager.Location = new System.Drawing.Point(299, 362);
             this.rdoManager.Name = "rdoManager";
-            this.rdoManager.Size = new System.Drawing.Size(69, 20);
+            this.rdoManager.Size = new System.Drawing.Size(78, 20);
             this.rdoManager.TabIndex = 72;
             this.rdoManager.Text = "Quản lý";
             // 
@@ -165,6 +170,7 @@ namespace BaiGiuXeVer2.Forms.Login
             this.Controls.Add(this.textUser);
             this.Name = "frmLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -55,6 +55,8 @@ namespace BaiGiuXeVer2.Forms.Registers
             this.textPassword.TabIndex = 74;
             this.textPassword.Text = "Password";
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textPassword.Enter += new System.EventHandler(this.textPassword_Enter);
+            this.textPassword.Leave += new System.EventHandler(this.textPassword_Leave);
             // 
             // textUser
             // 
@@ -71,6 +73,8 @@ namespace BaiGiuXeVer2.Forms.Registers
             this.textUser.TabIndex = 73;
             this.textUser.Text = "Username";
             this.textUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textUser.Enter += new System.EventHandler(this.textUser_Enter);
+            this.textUser.Leave += new System.EventHandler(this.textUser_Leave);
             // 
             // textConfirmPassword
             // 
@@ -87,6 +91,8 @@ namespace BaiGiuXeVer2.Forms.Registers
             this.textConfirmPassword.TabIndex = 80;
             this.textConfirmPassword.Text = "Confirm Password";
             this.textConfirmPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textConfirmPassword.Enter += new System.EventHandler(this.textConfirmPassword_Enter);
+            this.textConfirmPassword.Leave += new System.EventHandler(this.textConfirmPassword_Leave);
             // 
             // cbShowPassword
             // 
@@ -100,6 +106,7 @@ namespace BaiGiuXeVer2.Forms.Registers
             this.cbShowPassword.Size = new System.Drawing.Size(150, 22);
             this.cbShowPassword.TabIndex = 81;
             this.cbShowPassword.Text = "Hiển thị mật khẩu";
+            this.cbShowPassword.CheckedChanged += new System.EventHandler(this.cbShowPassword_CheckedChanged);
             // 
             // rdoManager
             // 
@@ -181,6 +188,7 @@ namespace BaiGiuXeVer2.Forms.Registers
             this.Controls.Add(this.iconLogin);
             this.Name = "frmRegister";
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.frmRegister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
