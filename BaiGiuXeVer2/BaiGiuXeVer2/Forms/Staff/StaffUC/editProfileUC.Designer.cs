@@ -30,33 +30,33 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
         private void InitializeComponent()
         {
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pic_bienso = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.dtmNgaySinh = new Guna.UI.WinForms.GunaDateTimePicker();
             this.cboGioiTinh = new Guna.UI.WinForms.GunaComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.TextBox_DiaChi = new Guna.UI.WinForms.GunaTextBox();
+            this.TextBox_TenQuanLy = new Guna.UI.WinForms.GunaTextBox();
             this.TextBox_SDT = new Guna.UI.WinForms.GunaTextBox();
             this.TextBox_HoTen = new Guna.UI.WinForms.GunaTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.TextBox_MaSo = new Guna.UI.WinForms.GunaTextBox();
             this.btnEdit = new Guna.UI.WinForms.GunaButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TextBox_DiaChi = new Guna.UI.WinForms.GunaTextBox();
-            this.TextBox_TenQuanLy = new Guna.UI.WinForms.GunaTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pic_avt = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_avt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bienso)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel1.Controls.Add(this.pic_avt);
+            this.gunaShadowPanel1.Controls.Add(this.pic_bienso);
             this.gunaShadowPanel1.Controls.Add(this.dtmNgaySinh);
             this.gunaShadowPanel1.Controls.Add(this.cboGioiTinh);
             this.gunaShadowPanel1.Controls.Add(this.label7);
@@ -81,6 +81,19 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.gunaShadowPanel1.ShadowShift = 8;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(467, 718);
             this.gunaShadowPanel1.TabIndex = 1;
+            // 
+            // pic_bienso
+            // 
+            this.pic_bienso.BaseColor = System.Drawing.Color.White;
+            this.pic_bienso.Image = global::BaiGiuXeVer2.Properties.Resources.default_DDLK_avatar;
+            this.pic_bienso.Location = new System.Drawing.Point(143, 512);
+            this.pic_bienso.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.pic_bienso.Name = "pic_bienso";
+            this.pic_bienso.Size = new System.Drawing.Size(115, 115);
+            this.pic_bienso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_bienso.TabIndex = 92;
+            this.pic_bienso.TabStop = false;
+            this.pic_bienso.UseTransfarantBackground = false;
             // 
             // dtmNgaySinh
             // 
@@ -131,6 +144,39 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.cboGioiTinh.Size = new System.Drawing.Size(160, 30);
             this.cboGioiTinh.TabIndex = 90;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(21, 360);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 28);
+            this.label7.TabIndex = 88;
+            this.label7.Text = "Địa chỉ:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(21, 524);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 28);
+            this.label8.TabIndex = 88;
+            this.label8.Text = "Ảnh:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(21, 462);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 28);
+            this.label6.TabIndex = 88;
+            this.label6.Text = "Tên quản lý:";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -174,6 +220,49 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label2.Size = new System.Drawing.Size(75, 28);
             this.label2.TabIndex = 88;
             this.label2.Text = "Họ tên:";
+            // 
+            // TextBox_DiaChi
+            // 
+            this.TextBox_DiaChi.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_DiaChi.BaseColor = System.Drawing.Color.White;
+            this.TextBox_DiaChi.BorderColor = System.Drawing.Color.Silver;
+            this.TextBox_DiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_DiaChi.FocusedBaseColor = System.Drawing.Color.White;
+            this.TextBox_DiaChi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TextBox_DiaChi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TextBox_DiaChi.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.TextBox_DiaChi.ForeColor = System.Drawing.Color.Black;
+            this.TextBox_DiaChi.Location = new System.Drawing.Point(143, 360);
+            this.TextBox_DiaChi.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.TextBox_DiaChi.Multiline = true;
+            this.TextBox_DiaChi.Name = "TextBox_DiaChi";
+            this.TextBox_DiaChi.PasswordChar = '\0';
+            this.TextBox_DiaChi.Radius = 10;
+            this.TextBox_DiaChi.SelectedText = "";
+            this.TextBox_DiaChi.ShortcutsEnabled = false;
+            this.TextBox_DiaChi.Size = new System.Drawing.Size(294, 89);
+            this.TextBox_DiaChi.TabIndex = 89;
+            // 
+            // TextBox_TenQuanLy
+            // 
+            this.TextBox_TenQuanLy.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_TenQuanLy.BaseColor = System.Drawing.Color.White;
+            this.TextBox_TenQuanLy.BorderColor = System.Drawing.Color.Silver;
+            this.TextBox_TenQuanLy.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_TenQuanLy.Enabled = false;
+            this.TextBox_TenQuanLy.FocusedBaseColor = System.Drawing.Color.White;
+            this.TextBox_TenQuanLy.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TextBox_TenQuanLy.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TextBox_TenQuanLy.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.TextBox_TenQuanLy.ForeColor = System.Drawing.Color.Black;
+            this.TextBox_TenQuanLy.Location = new System.Drawing.Point(143, 462);
+            this.TextBox_TenQuanLy.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.TextBox_TenQuanLy.Name = "TextBox_TenQuanLy";
+            this.TextBox_TenQuanLy.PasswordChar = '\0';
+            this.TextBox_TenQuanLy.Radius = 10;
+            this.TextBox_TenQuanLy.SelectedText = "";
+            this.TextBox_TenQuanLy.Size = new System.Drawing.Size(294, 37);
+            this.TextBox_TenQuanLy.TabIndex = 89;
             // 
             // TextBox_SDT
             // 
@@ -283,95 +372,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label1.TabIndex = 0;
             this.label1.Text = "THÔNG TIN";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(21, 462);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 28);
-            this.label6.TabIndex = 88;
-            this.label6.Text = "Tên quản lý:";
-            // 
-            // TextBox_DiaChi
-            // 
-            this.TextBox_DiaChi.BackColor = System.Drawing.Color.Transparent;
-            this.TextBox_DiaChi.BaseColor = System.Drawing.Color.White;
-            this.TextBox_DiaChi.BorderColor = System.Drawing.Color.Silver;
-            this.TextBox_DiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_DiaChi.FocusedBaseColor = System.Drawing.Color.White;
-            this.TextBox_DiaChi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TextBox_DiaChi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TextBox_DiaChi.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.TextBox_DiaChi.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_DiaChi.Location = new System.Drawing.Point(143, 360);
-            this.TextBox_DiaChi.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.TextBox_DiaChi.Multiline = true;
-            this.TextBox_DiaChi.Name = "TextBox_DiaChi";
-            this.TextBox_DiaChi.PasswordChar = '\0';
-            this.TextBox_DiaChi.Radius = 10;
-            this.TextBox_DiaChi.SelectedText = "";
-            this.TextBox_DiaChi.ShortcutsEnabled = false;
-            this.TextBox_DiaChi.Size = new System.Drawing.Size(294, 89);
-            this.TextBox_DiaChi.TabIndex = 89;
-            // 
-            // TextBox_TenQuanLy
-            // 
-            this.TextBox_TenQuanLy.BackColor = System.Drawing.Color.Transparent;
-            this.TextBox_TenQuanLy.BaseColor = System.Drawing.Color.White;
-            this.TextBox_TenQuanLy.BorderColor = System.Drawing.Color.Silver;
-            this.TextBox_TenQuanLy.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_TenQuanLy.Enabled = false;
-            this.TextBox_TenQuanLy.FocusedBaseColor = System.Drawing.Color.White;
-            this.TextBox_TenQuanLy.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TextBox_TenQuanLy.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TextBox_TenQuanLy.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.TextBox_TenQuanLy.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_TenQuanLy.Location = new System.Drawing.Point(143, 462);
-            this.TextBox_TenQuanLy.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.TextBox_TenQuanLy.Name = "TextBox_TenQuanLy";
-            this.TextBox_TenQuanLy.PasswordChar = '\0';
-            this.TextBox_TenQuanLy.Radius = 10;
-            this.TextBox_TenQuanLy.SelectedText = "";
-            this.TextBox_TenQuanLy.Size = new System.Drawing.Size(294, 37);
-            this.TextBox_TenQuanLy.TabIndex = 89;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(21, 360);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 28);
-            this.label7.TabIndex = 88;
-            this.label7.Text = "Địa chỉ:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(21, 524);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 28);
-            this.label8.TabIndex = 88;
-            this.label8.Text = "Ảnh:";
-            // 
-            // pic_avt
-            // 
-            this.pic_avt.BaseColor = System.Drawing.Color.White;
-            this.pic_avt.Image = global::BaiGiuXeVer2.Properties.Resources.default_DDLK_avatar;
-            this.pic_avt.Location = new System.Drawing.Point(143, 512);
-            this.pic_avt.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.pic_avt.Name = "pic_avt";
-            this.pic_avt.Size = new System.Drawing.Size(115, 115);
-            this.pic_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_avt.TabIndex = 92;
-            this.pic_avt.TabStop = false;
-            this.pic_avt.UseTransfarantBackground = false;
-            // 
             // editProfileUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,7 +381,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.Size = new System.Drawing.Size(1077, 800);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_avt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bienso)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -405,7 +405,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
         private System.Windows.Forms.Label label6;
         private Guna.UI.WinForms.GunaTextBox TextBox_DiaChi;
         private Guna.UI.WinForms.GunaTextBox TextBox_TenQuanLy;
-        private Guna.UI.WinForms.GunaCirclePictureBox pic_avt;
+        private Guna.UI.WinForms.GunaCirclePictureBox pic_bienso;
         private System.Windows.Forms.Label label8;
     }
 }

@@ -19,12 +19,7 @@ namespace BaiGiuXeVer2.Forms.Staff
 
         private void mainFormStaff_Load(object sender, EventArgs e)
         {
-            editProfileUC1.Visible = false;
-            changePasswordUC1.Visible = false;
-            checkInOutCar1.Visible = false;
-            receiveCarUC1.Visible = false;
-            calendarUC1.Visible = false;
-            shiftInformationUC1.Visible = false;
+            this.closeAllUC();
         }
 
         private void closeAllUC()

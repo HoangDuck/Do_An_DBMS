@@ -1,7 +1,7 @@
 ﻿
-namespace BaiGiuXeVer2.Forms.Workers.Xe
+namespace BaiGiuXeVer2.Forms.Manager
 {
-    partial class InDSXe
+    partial class showCalenderStaff
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,30 @@ namespace BaiGiuXeVer2.Forms.Workers.Xe
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.calendarUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.calendarUC();
+            this.SuspendLayout();
+            // 
+            // calendarUC1
+            // 
+            this.calendarUC1.Location = new System.Drawing.Point(0, 1);
+            this.calendarUC1.Name = "calendarUC1";
+            this.calendarUC1.Size = new System.Drawing.Size(1077, 800);
+            this.calendarUC1.TabIndex = 0;
+            // 
+            // showCalenderStaff
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "InDSXe";
+            this.ClientSize = new System.Drawing.Size(1080, 788);
+            this.Controls.Add(this.calendarUC1);
+            this.Name = "showCalenderStaff";
+            this.Text = "Calender Staff";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Staff.StaffUC.calendarUC calendarUC1;
     }
 }

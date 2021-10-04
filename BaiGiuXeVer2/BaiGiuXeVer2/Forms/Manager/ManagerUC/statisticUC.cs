@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BaiGiuXeVer2.Forms.Workers.KhachHang
+namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
 {
-    public partial class XoaKhachHang : Form
+    public partial class statisticUC : UserControl
     {
-        public XoaKhachHang()
+        public statisticUC()
         {
             InitializeComponent();
         }

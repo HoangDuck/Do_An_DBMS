@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BaiGiuXeVer2.Forms.Workers.KhachHang
+namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
 {
-    public partial class ThemKH : Form
+    public partial class showInfoStaffUC : UserControl
     {
-        public ThemKH()
+        public showInfoStaffUC()
         {
             InitializeComponent();
         }

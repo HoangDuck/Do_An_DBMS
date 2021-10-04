@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BaiGiuXeVer2.Forms.Workers.Xe
+namespace BaiGiuXeVer2.Forms.Manager
 {
-    public partial class InDSXe : Form
+    public partial class showCalenderStaff : Form
     {
-        public InDSXe()
+        public showCalenderStaff()
         {
             InitializeComponent();
         }

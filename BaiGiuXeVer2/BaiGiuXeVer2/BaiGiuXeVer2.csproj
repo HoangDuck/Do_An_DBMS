@@ -65,6 +65,30 @@
     <Compile Include="Forms\Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Manager\mainFormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\mainFormManager.Designer.cs">
+      <DependentUpon>mainFormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\showInfoStaffUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\showInfoStaffUC.Designer.cs">
+      <DependentUpon>showInfoStaffUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\statisticUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\statisticUC.Designer.cs">
+      <DependentUpon>statisticUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\showCalenderStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\showCalenderStaff.Designer.cs">
+      <DependentUpon>showCalenderStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Registers\frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,90 +143,6 @@
     <Compile Include="Forms\Staff\StaffUC\showListCarInPackUC.Designer.cs">
       <DependentUpon>showListCarInPackUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Workers\DoanhThu\ChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\DoanhThu\ChiTiet.Designer.cs">
-      <DependentUpon>ChiTiet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\DoanhThu\DoanhThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\DoanhThu\DoanhThu.Designer.cs">
-      <DependentUpon>DoanhThu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\KhachHang\DanhSachKH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\KhachHang\DanhSachKH.Designer.cs">
-      <DependentUpon>DanhSachKH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\KhachHang\SuaThongTinKH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\KhachHang\SuaThongTinKH.Designer.cs">
-      <DependentUpon>SuaThongTinKH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\ThongTinNV\ThongTinNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\ThongTinNV\ThongTinNV.Designer.cs">
-      <DependentUpon>ThongTinNV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\TKB\TKB.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\TKB\TKB.Designer.cs">
-      <DependentUpon>TKB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\ChonXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\ChonXe.Designer.cs">
-      <DependentUpon>ChonXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\DanhSachXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\DanhSachXe.Designer.cs">
-      <DependentUpon>DanhSachXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\InDSXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\InDSXe.Designer.cs">
-      <DependentUpon>InDSXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\SuaThongTinXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\SuaThongTinXe.Designer.cs">
-      <DependentUpon>SuaThongTinXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\ThemXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\ThemXe.Designer.cs">
-      <DependentUpon>ThemXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\ThongKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\ThongKe.Designer.cs">
-      <DependentUpon>ThongKe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\TraXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Workers\Xe\TraXe.Designer.cs">
-      <DependentUpon>TraXe.cs</DependentUpon>
-    </Compile>
     <Compile Include="MyDB\MyDBChuyenMon.cs" />
     <Compile Include="MyDB\MyDBParkLogin.cs" />
     <Compile Include="MyDB\MyDBXe.cs" />
@@ -210,6 +150,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\mainFormManager.resx">
+      <DependentUpon>mainFormManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerUC\showInfoStaffUC.resx">
+      <DependentUpon>showInfoStaffUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerUC\statisticUC.resx">
+      <DependentUpon>statisticUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\showCalenderStaff.resx">
+      <DependentUpon>showCalenderStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Registers\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
@@ -237,45 +189,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Staff\StaffUC\showListCarInPackUC.resx">
       <DependentUpon>showListCarInPackUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\DoanhThu\ChiTiet.resx">
-      <DependentUpon>ChiTiet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\DoanhThu\DoanhThu.resx">
-      <DependentUpon>DoanhThu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\KhachHang\DanhSachKH.resx">
-      <DependentUpon>DanhSachKH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\KhachHang\SuaThongTinKH.resx">
-      <DependentUpon>SuaThongTinKH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\ThongTinNV\ThongTinNV.resx">
-      <DependentUpon>ThongTinNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\TKB\TKB.resx">
-      <DependentUpon>TKB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\Xe\ChonXe.resx">
-      <DependentUpon>ChonXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\Xe\DanhSachXe.resx">
-      <DependentUpon>DanhSachXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\Xe\SuaThongTinXe.resx">
-      <DependentUpon>SuaThongTinXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\Xe\ThemXe.resx">
-      <DependentUpon>ThemXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\Xe\ThongKe.resx">
-      <DependentUpon>ThongKe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Workers\Xe\TraXe.resx">
-      <DependentUpon>TraXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -341,7 +254,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Class diagrams\" />
-    <Folder Include="Forms\Managers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
