@@ -71,6 +71,18 @@
     <Compile Include="Forms\Manager\mainFormManager.Designer.cs">
       <DependentUpon>mainFormManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\chiaCaUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\chiaCaUC.Designer.cs">
+      <DependentUpon>chiaCaUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\registerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerUC\registerUC.Designer.cs">
+      <DependentUpon>registerUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Manager\ManagerUC\showInfoStaffUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,12 +100,6 @@
     </Compile>
     <Compile Include="Forms\Manager\showCalenderStaff.Designer.cs">
       <DependentUpon>showCalenderStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Registers\frmRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Registers\frmRegister.Designer.cs">
-      <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Staff\mainFormStaff.cs">
       <SubType>Form</SubType>
@@ -154,6 +160,12 @@
     <EmbeddedResource Include="Forms\Manager\mainFormManager.resx">
       <DependentUpon>mainFormManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerUC\chiaCaUC.resx">
+      <DependentUpon>chiaCaUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerUC\registerUC.resx">
+      <DependentUpon>registerUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Manager\ManagerUC\showInfoStaffUC.resx">
       <DependentUpon>showInfoStaffUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Manager\showCalenderStaff.resx">
       <DependentUpon>showCalenderStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Registers\frmRegister.resx">
-      <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Staff\mainFormStaff.resx">
       <DependentUpon>mainFormStaff.cs</DependentUpon>

@@ -29,19 +29,18 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.btnEdit = new Guna.UI.WinForms.GunaButton();
             this.TextBox_Search = new Guna.UI.WinForms.GunaTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.GroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rdoMaSo = new Guna.UI.WinForms.GunaRadioButton();
-            this.rboHoTen = new Guna.UI.WinForms.GunaRadioButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.TextBox_DiaChi = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TextBox_SDT = new Guna.UI.WinForms.GunaTextBox();
@@ -54,10 +53,12 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.label12 = new System.Windows.Forms.Label();
             this.TextBox_MaSo = new Guna.UI.WinForms.GunaTextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.GroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rdoMaSo = new Guna.UI.WinForms.GunaRadioButton();
+            this.rboHoTen = new Guna.UI.WinForms.GunaRadioButton();
             this.Pic_ADD = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
@@ -67,37 +68,37 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(24, 359);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(24, 399);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(1029, 427);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(1029, 387);
             this.gunaDataGridView1.TabIndex = 113;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -147,7 +148,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.btnEdit.ForeColor = System.Drawing.Color.Gray;
             this.btnEdit.Image = null;
             this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEdit.Location = new System.Drawing.Point(215, 176);
+            this.btnEdit.Location = new System.Drawing.Point(215, 200);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -171,7 +172,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.TextBox_Search.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_Search.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.TextBox_Search.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_Search.Location = new System.Drawing.Point(3, 169);
+            this.TextBox_Search.Location = new System.Drawing.Point(3, 193);
             this.TextBox_Search.Name = "TextBox_Search";
             this.TextBox_Search.PasswordChar = '\0';
             this.TextBox_Search.Radius = 10;
@@ -184,7 +185,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(3, 135);
+            this.label2.Location = new System.Drawing.Point(3, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 28);
             this.label2.TabIndex = 107;
@@ -196,6 +197,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.groupBox2.BaseColor = System.Drawing.Color.White;
             this.groupBox2.BorderColor = System.Drawing.Color.Gray;
             this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.gunaButton1);
             this.groupBox2.Controls.Add(this.Pic_ADD);
             this.groupBox2.Controls.Add(this.gunaTextBox1);
             this.groupBox2.Controls.Add(this.label1);
@@ -217,68 +219,52 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.groupBox2.Location = new System.Drawing.Point(348, 88);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Radius = 10;
-            this.groupBox2.Size = new System.Drawing.Size(705, 240);
+            this.groupBox2.Size = new System.Drawing.Size(705, 282);
             this.groupBox2.TabIndex = 111;
             this.groupBox2.Text = "Thông tin";
             this.groupBox2.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // GroupBox1
+            // label10
             // 
-            this.GroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.GroupBox1.BaseColor = System.Drawing.Color.White;
-            this.GroupBox1.BorderColor = System.Drawing.Color.Gray;
-            this.GroupBox1.Controls.Add(this.groupBox3);
-            this.GroupBox1.Controls.Add(this.btnEdit);
-            this.GroupBox1.Controls.Add(this.TextBox_Search);
-            this.GroupBox1.Controls.Add(this.label2);
-            this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.GroupBox1.LineColor = System.Drawing.Color.Gray;
-            this.GroupBox1.Location = new System.Drawing.Point(24, 88);
-            this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Radius = 10;
-            this.GroupBox1.Size = new System.Drawing.Size(322, 240);
-            this.GroupBox1.TabIndex = 110;
-            this.GroupBox1.Text = "Tìm Kiếm";
-            this.GroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(364, 123);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(111, 21);
+            this.label10.TabIndex = 130;
+            this.label10.Text = "Ảnh đại diện:";
             // 
-            // groupBox3
+            // gunaTextBox1
             // 
-            this.groupBox3.Controls.Add(this.rdoMaSo);
-            this.groupBox3.Controls.Add(this.rboHoTen);
-            this.groupBox3.ForeColor = System.Drawing.Color.Gray;
-            this.groupBox3.Location = new System.Drawing.Point(3, 41);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(315, 91);
-            this.groupBox3.TabIndex = 110;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tìm kiếm theo";
+            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox1.Enabled = false;
+            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gunaTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.gunaTextBox1.Location = new System.Drawing.Point(474, 82);
+            this.gunaTextBox1.Name = "gunaTextBox1";
+            this.gunaTextBox1.PasswordChar = '\0';
+            this.gunaTextBox1.Radius = 10;
+            this.gunaTextBox1.SelectedText = "";
+            this.gunaTextBox1.Size = new System.Drawing.Size(195, 29);
+            this.gunaTextBox1.TabIndex = 128;
             // 
-            // rdoMaSo
+            // label1
             // 
-            this.rdoMaSo.BaseColor = System.Drawing.SystemColors.Control;
-            this.rdoMaSo.CheckedOffColor = System.Drawing.Color.Gray;
-            this.rdoMaSo.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.rdoMaSo.FillColor = System.Drawing.Color.White;
-            this.rdoMaSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.rdoMaSo.Location = new System.Drawing.Point(193, 41);
-            this.rdoMaSo.Name = "rdoMaSo";
-            this.rdoMaSo.Size = new System.Drawing.Size(69, 20);
-            this.rdoMaSo.TabIndex = 1;
-            this.rdoMaSo.Text = "Mã số";
-            // 
-            // rboHoTen
-            // 
-            this.rboHoTen.BaseColor = System.Drawing.SystemColors.Control;
-            this.rboHoTen.CheckedOffColor = System.Drawing.Color.Gray;
-            this.rboHoTen.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.rboHoTen.FillColor = System.Drawing.Color.White;
-            this.rboHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.rboHoTen.Location = new System.Drawing.Point(64, 41);
-            this.rboHoTen.Name = "rboHoTen";
-            this.rboHoTen.Size = new System.Drawing.Size(77, 20);
-            this.rboHoTen.TabIndex = 0;
-            this.rboHoTen.Text = "Họ Tên";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(364, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 21);
+            this.label1.TabIndex = 127;
+            this.label1.Text = "Mã quản lý:";
             // 
             // TextBox_DiaChi
             // 
@@ -473,36 +459,63 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.label17.TabIndex = 106;
             this.label17.Text = "Mã Số:";
             // 
-            // gunaTextBox1
+            // GroupBox1
             // 
-            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.Enabled = false;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gunaTextBox1.ForeColor = System.Drawing.Color.Gray;
-            this.gunaTextBox1.Location = new System.Drawing.Point(474, 82);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Radius = 10;
-            this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(195, 29);
-            this.gunaTextBox1.TabIndex = 128;
+            this.GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.GroupBox1.BaseColor = System.Drawing.Color.White;
+            this.GroupBox1.BorderColor = System.Drawing.Color.Gray;
+            this.GroupBox1.Controls.Add(this.groupBox3);
+            this.GroupBox1.Controls.Add(this.btnEdit);
+            this.GroupBox1.Controls.Add(this.TextBox_Search);
+            this.GroupBox1.Controls.Add(this.label2);
+            this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.GroupBox1.ForeColor = System.Drawing.Color.White;
+            this.GroupBox1.LineColor = System.Drawing.Color.Gray;
+            this.GroupBox1.Location = new System.Drawing.Point(24, 88);
+            this.GroupBox1.Name = "GroupBox1";
+            this.GroupBox1.Radius = 10;
+            this.GroupBox1.Size = new System.Drawing.Size(322, 282);
+            this.GroupBox1.TabIndex = 110;
+            this.GroupBox1.Text = "Tìm Kiếm";
+            this.GroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // label1
+            // groupBox3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(364, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 21);
-            this.label1.TabIndex = 127;
-            this.label1.Text = "Mã quản lý:";
+            this.groupBox3.Controls.Add(this.rdoMaSo);
+            this.groupBox3.Controls.Add(this.rboHoTen);
+            this.groupBox3.ForeColor = System.Drawing.Color.Gray;
+            this.groupBox3.Location = new System.Drawing.Point(3, 65);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(315, 91);
+            this.groupBox3.TabIndex = 110;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tìm kiếm theo";
+            // 
+            // rdoMaSo
+            // 
+            this.rdoMaSo.BaseColor = System.Drawing.SystemColors.Control;
+            this.rdoMaSo.CheckedOffColor = System.Drawing.Color.Gray;
+            this.rdoMaSo.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.rdoMaSo.FillColor = System.Drawing.Color.White;
+            this.rdoMaSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.rdoMaSo.Location = new System.Drawing.Point(193, 41);
+            this.rdoMaSo.Name = "rdoMaSo";
+            this.rdoMaSo.Size = new System.Drawing.Size(69, 20);
+            this.rdoMaSo.TabIndex = 1;
+            this.rdoMaSo.Text = "Mã số";
+            // 
+            // rboHoTen
+            // 
+            this.rboHoTen.BaseColor = System.Drawing.SystemColors.Control;
+            this.rboHoTen.CheckedOffColor = System.Drawing.Color.Gray;
+            this.rboHoTen.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.rboHoTen.FillColor = System.Drawing.Color.White;
+            this.rboHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.rboHoTen.Location = new System.Drawing.Point(64, 41);
+            this.rboHoTen.Name = "rboHoTen";
+            this.rboHoTen.Size = new System.Drawing.Size(77, 20);
+            this.rboHoTen.TabIndex = 0;
+            this.rboHoTen.Text = "Họ Tên";
             // 
             // Pic_ADD
             // 
@@ -516,16 +529,32 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.Pic_ADD.TabStop = false;
             this.Pic_ADD.UseTransfarantBackground = false;
             // 
-            // label10
+            // gunaButton1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(364, 123);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 21);
-            this.label10.TabIndex = 130;
-            this.label10.Text = "Ảnh đại diện:";
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Gray;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Gray;
+            this.gunaButton1.BorderSize = 3;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = null;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(280, 229);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 8;
+            this.gunaButton1.Size = new System.Drawing.Size(93, 41);
+            this.gunaButton1.TabIndex = 109;
+            this.gunaButton1.Text = "Xóa";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // showInfoStaffUC
             // 
@@ -578,5 +607,6 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
         private Guna.UI.WinForms.GunaRadioButton rdoMaSo;
         private Guna.UI.WinForms.GunaRadioButton rboHoTen;
         private System.Windows.Forms.Label label10;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
     }
 }

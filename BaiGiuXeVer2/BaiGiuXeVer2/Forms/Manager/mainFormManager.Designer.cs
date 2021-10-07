@@ -37,24 +37,27 @@ namespace BaiGiuXeVer2.Forms.Manager
             this.label_Name = new System.Windows.Forms.Label();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaGradientPanel3 = new Guna.UI.WinForms.GunaGradientPanel();
-            this.gunaGradientPanel4 = new Guna.UI.WinForms.GunaGradientPanel();
             this.btnDangKy = new Guna.UI.WinForms.GunaButton();
             this.btnThongTinNhanVien = new Guna.UI.WinForms.GunaButton();
             this.btnXeTrongBai = new Guna.UI.WinForms.GunaButton();
-            this.Avatar_Pic = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
             this.gunaGradientPanel2 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.gunaGradientPanel3 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.gunaGradientPanel4 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.Avatar_Pic = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.statisticUC1 = new BaiGiuXeVer2.Forms.Manager.ManagerUC.statisticUC();
             this.showListCarInPackUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.showListCarInPackUC();
             this.showInfoStaffUC1 = new BaiGiuXeVer2.Forms.Manager.ManagerUC.showInfoStaffUC();
             this.editProfileUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.editProfileUC();
             this.changePasswordUC1 = new BaiGiuXeVer2.Forms.Staff.StaffUC.changePasswordUC();
+            this.registerUC1 = new BaiGiuXeVer2.Forms.Manager.ManagerUC.registerUC();
+            this.chiaCaUC1 = new BaiGiuXeVer2.Forms.Manager.ManagerUC.chiaCaUC();
+            this.btnChiaCa = new Guna.UI.WinForms.GunaButton();
             this.gunaElipsePanel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.gunaGradientPanel1.SuspendLayout();
             this.gunaGradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pic)).BeginInit();
-            this.gunaGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogOut
@@ -197,6 +200,7 @@ namespace BaiGiuXeVer2.Forms.Manager
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnChiaCa);
             this.panel1.Controls.Add(this.gunaGradientPanel3);
             this.panel1.Controls.Add(this.btnThongTin);
             this.panel1.Controls.Add(this.btnLogOut);
@@ -212,36 +216,6 @@ namespace BaiGiuXeVer2.Forms.Manager
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(305, 800);
             this.panel1.TabIndex = 12;
-            // 
-            // gunaGradientPanel3
-            // 
-            this.gunaGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel3.BackgroundImage")));
-            this.gunaGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel3.Controls.Add(this.gunaGradientPanel4);
-            this.gunaGradientPanel3.GradientColor1 = System.Drawing.Color.White;
-            this.gunaGradientPanel3.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel3.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(218)))));
-            this.gunaGradientPanel3.GradientColor4 = System.Drawing.Color.White;
-            this.gunaGradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.gunaGradientPanel3.Name = "gunaGradientPanel3";
-            this.gunaGradientPanel3.Size = new System.Drawing.Size(305, 20);
-            this.gunaGradientPanel3.TabIndex = 99;
-            this.gunaGradientPanel3.Text = "gunaGradientPanel3";
-            // 
-            // gunaGradientPanel4
-            // 
-            this.gunaGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel4.BackgroundImage")));
-            this.gunaGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel4.GradientColor1 = System.Drawing.Color.White;
-            this.gunaGradientPanel4.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel4.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(218)))));
-            this.gunaGradientPanel4.GradientColor4 = System.Drawing.Color.White;
-            this.gunaGradientPanel4.Location = new System.Drawing.Point(305, 0);
-            this.gunaGradientPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaGradientPanel4.Name = "gunaGradientPanel4";
-            this.gunaGradientPanel4.Size = new System.Drawing.Size(1077, 20);
-            this.gunaGradientPanel4.TabIndex = 99;
-            this.gunaGradientPanel4.Text = "gunaGradientPanel4";
             // 
             // btnDangKy
             // 
@@ -330,23 +304,12 @@ namespace BaiGiuXeVer2.Forms.Manager
             this.btnXeTrongBai.TextOffsetX = 90;
             this.btnXeTrongBai.Click += new System.EventHandler(this.btnXeTrongBai_Click);
             // 
-            // Avatar_Pic
-            // 
-            this.Avatar_Pic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(229)))));
-            this.Avatar_Pic.BaseColor = System.Drawing.Color.White;
-            this.Avatar_Pic.Image = global::BaiGiuXeVer2.Properties.Resources.default_DDLK_avatar;
-            this.Avatar_Pic.Location = new System.Drawing.Point(70, 26);
-            this.Avatar_Pic.Name = "Avatar_Pic";
-            this.Avatar_Pic.Size = new System.Drawing.Size(175, 175);
-            this.Avatar_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Avatar_Pic.TabIndex = 2;
-            this.Avatar_Pic.TabStop = false;
-            this.Avatar_Pic.UseTransfarantBackground = false;
-            // 
             // gunaGradientPanel1
             // 
             this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
             this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.chiaCaUC1);
+            this.gunaGradientPanel1.Controls.Add(this.registerUC1);
             this.gunaGradientPanel1.Controls.Add(this.statisticUC1);
             this.gunaGradientPanel1.Controls.Add(this.showListCarInPackUC1);
             this.gunaGradientPanel1.Controls.Add(this.showInfoStaffUC1);
@@ -377,6 +340,49 @@ namespace BaiGiuXeVer2.Forms.Manager
             this.gunaGradientPanel2.Size = new System.Drawing.Size(18, 800);
             this.gunaGradientPanel2.TabIndex = 99;
             this.gunaGradientPanel2.Text = "gunaGradientPanel2";
+            // 
+            // gunaGradientPanel3
+            // 
+            this.gunaGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel3.BackgroundImage")));
+            this.gunaGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel3.Controls.Add(this.gunaGradientPanel4);
+            this.gunaGradientPanel3.GradientColor1 = System.Drawing.Color.White;
+            this.gunaGradientPanel3.GradientColor2 = System.Drawing.Color.White;
+            this.gunaGradientPanel3.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(218)))));
+            this.gunaGradientPanel3.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel3.Location = new System.Drawing.Point(0, 0);
+            this.gunaGradientPanel3.Name = "gunaGradientPanel3";
+            this.gunaGradientPanel3.Size = new System.Drawing.Size(305, 20);
+            this.gunaGradientPanel3.TabIndex = 99;
+            this.gunaGradientPanel3.Text = "gunaGradientPanel3";
+            // 
+            // gunaGradientPanel4
+            // 
+            this.gunaGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel4.BackgroundImage")));
+            this.gunaGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel4.GradientColor1 = System.Drawing.Color.White;
+            this.gunaGradientPanel4.GradientColor2 = System.Drawing.Color.White;
+            this.gunaGradientPanel4.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(218)))));
+            this.gunaGradientPanel4.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel4.Location = new System.Drawing.Point(305, 0);
+            this.gunaGradientPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.gunaGradientPanel4.Name = "gunaGradientPanel4";
+            this.gunaGradientPanel4.Size = new System.Drawing.Size(1077, 20);
+            this.gunaGradientPanel4.TabIndex = 99;
+            this.gunaGradientPanel4.Text = "gunaGradientPanel4";
+            // 
+            // Avatar_Pic
+            // 
+            this.Avatar_Pic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(229)))));
+            this.Avatar_Pic.BaseColor = System.Drawing.Color.White;
+            this.Avatar_Pic.Image = global::BaiGiuXeVer2.Properties.Resources.default_DDLK_avatar;
+            this.Avatar_Pic.Location = new System.Drawing.Point(70, 26);
+            this.Avatar_Pic.Name = "Avatar_Pic";
+            this.Avatar_Pic.Size = new System.Drawing.Size(175, 175);
+            this.Avatar_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Avatar_Pic.TabIndex = 2;
+            this.Avatar_Pic.TabStop = false;
+            this.Avatar_Pic.UseTransfarantBackground = false;
             // 
             // statisticUC1
             // 
@@ -420,6 +426,51 @@ namespace BaiGiuXeVer2.Forms.Manager
             this.changePasswordUC1.TabIndex = 1;
             this.changePasswordUC1.Visible = false;
             // 
+            // registerUC1
+            // 
+            this.registerUC1.Location = new System.Drawing.Point(0, 0);
+            this.registerUC1.Name = "registerUC1";
+            this.registerUC1.Size = new System.Drawing.Size(1077, 800);
+            this.registerUC1.TabIndex = 100;
+            this.registerUC1.Visible = false;
+            // 
+            // chiaCaUC1
+            // 
+            this.chiaCaUC1.Location = new System.Drawing.Point(0, 0);
+            this.chiaCaUC1.Name = "chiaCaUC1";
+            this.chiaCaUC1.Size = new System.Drawing.Size(1077, 800);
+            this.chiaCaUC1.TabIndex = 101;
+            this.chiaCaUC1.Visible = false;
+            // 
+            // btnChiaCa
+            // 
+            this.btnChiaCa.AnimationHoverSpeed = 0.07F;
+            this.btnChiaCa.AnimationSpeed = 0.03F;
+            this.btnChiaCa.BackColor = System.Drawing.Color.Transparent;
+            this.btnChiaCa.BaseColor = System.Drawing.Color.White;
+            this.btnChiaCa.BorderColor = System.Drawing.Color.White;
+            this.btnChiaCa.BorderSize = 3;
+            this.btnChiaCa.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnChiaCa.FocusedColor = System.Drawing.Color.Empty;
+            this.btnChiaCa.Font = new System.Drawing.Font("Leelawadee UI", 20F);
+            this.btnChiaCa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(150)))), ((int)(((byte)(156)))));
+            this.btnChiaCa.Image = null;
+            this.btnChiaCa.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnChiaCa.Location = new System.Drawing.Point(-80, 659);
+            this.btnChiaCa.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnChiaCa.Name = "btnChiaCa";
+            this.btnChiaCa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(133)))), ((int)(((byte)(231)))));
+            this.btnChiaCa.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btnChiaCa.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnChiaCa.OnHoverImage = null;
+            this.btnChiaCa.OnPressedColor = System.Drawing.Color.Black;
+            this.btnChiaCa.Radius = 40;
+            this.btnChiaCa.Size = new System.Drawing.Size(427, 63);
+            this.btnChiaCa.TabIndex = 100;
+            this.btnChiaCa.Text = "►Chia ca";
+            this.btnChiaCa.TextOffsetX = 90;
+            this.btnChiaCa.Click += new System.EventHandler(this.btnChiaCa_Click);
+            // 
             // mainFormManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,9 +483,9 @@ namespace BaiGiuXeVer2.Forms.Manager
             this.Load += new System.EventHandler(this.mainFormManager_Load);
             this.gunaElipsePanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pic)).EndInit();
-            this.gunaGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -461,5 +512,8 @@ namespace BaiGiuXeVer2.Forms.Manager
         private Staff.StaffUC.showListCarInPackUC showListCarInPackUC1;
         private ManagerUC.showInfoStaffUC showInfoStaffUC1;
         private ManagerUC.statisticUC statisticUC1;
+        private ManagerUC.chiaCaUC chiaCaUC1;
+        private ManagerUC.registerUC registerUC1;
+        private Guna.UI.WinForms.GunaButton btnChiaCa;
     }
 }

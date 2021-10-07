@@ -38,7 +38,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.TextBox_Phi = new Guna.UI.WinForms.GunaTextBox();
             this.dtmNgayTra = new Guna.UI.WinForms.GunaDateTimePicker();
             this.dtmNgayGui = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.TextBox_LoaiXe = new Guna.UI.WinForms.GunaTextBox();
             this.TextBox_BienSo = new Guna.UI.WinForms.GunaTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1.SuspendLayout();
@@ -66,7 +64,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.gunaShadowPanel1.Controls.Add(this.TextBox_Phi);
             this.gunaShadowPanel1.Controls.Add(this.dtmNgayTra);
             this.gunaShadowPanel1.Controls.Add(this.dtmNgayGui);
-            this.gunaShadowPanel1.Controls.Add(this.TextBox_LoaiXe);
             this.gunaShadowPanel1.Controls.Add(this.TextBox_BienSo);
             this.gunaShadowPanel1.Controls.Add(this.label10);
             this.gunaShadowPanel1.Controls.Add(this.label9);
@@ -75,7 +72,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.gunaShadowPanel1.Controls.Add(this.label6);
             this.gunaShadowPanel1.Controls.Add(this.label5);
             this.gunaShadowPanel1.Controls.Add(this.label4);
-            this.gunaShadowPanel1.Controls.Add(this.label2);
             this.gunaShadowPanel1.Controls.Add(this.label17);
             this.gunaShadowPanel1.Controls.Add(this.label1);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(88, 41);
@@ -100,7 +96,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
             this.btnEdit.Image = null;
             this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEdit.Location = new System.Drawing.Point(160, 501);
+            this.btnEdit.Location = new System.Drawing.Point(134, 474);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -202,7 +198,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.TextBox_Phi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_Phi.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.TextBox_Phi.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_Phi.Location = new System.Drawing.Point(160, 376);
+            this.TextBox_Phi.Location = new System.Drawing.Point(160, 354);
             this.TextBox_Phi.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.TextBox_Phi.Name = "TextBox_Phi";
             this.TextBox_Phi.PasswordChar = '\0';
@@ -223,7 +219,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.dtmNgayTra.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtmNgayTra.ForeColor = System.Drawing.Color.Black;
             this.dtmNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtmNgayTra.Location = new System.Drawing.Point(160, 323);
+            this.dtmNgayTra.Location = new System.Drawing.Point(160, 291);
             this.dtmNgayTra.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.dtmNgayTra.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtmNgayTra.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -250,7 +246,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.dtmNgayGui.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtmNgayGui.ForeColor = System.Drawing.Color.Black;
             this.dtmNgayGui.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtmNgayGui.Location = new System.Drawing.Point(160, 270);
+            this.dtmNgayGui.Location = new System.Drawing.Point(160, 224);
             this.dtmNgayGui.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
             this.dtmNgayGui.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtmNgayGui.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -264,26 +260,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.dtmNgayGui.TabIndex = 100;
             this.dtmNgayGui.Text = "22/04/2021";
             this.dtmNgayGui.Value = new System.DateTime(2021, 4, 22, 11, 37, 58, 266);
-            // 
-            // TextBox_LoaiXe
-            // 
-            this.TextBox_LoaiXe.BackColor = System.Drawing.Color.Transparent;
-            this.TextBox_LoaiXe.BaseColor = System.Drawing.Color.White;
-            this.TextBox_LoaiXe.BorderColor = System.Drawing.Color.Silver;
-            this.TextBox_LoaiXe.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_LoaiXe.FocusedBaseColor = System.Drawing.Color.White;
-            this.TextBox_LoaiXe.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TextBox_LoaiXe.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TextBox_LoaiXe.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.TextBox_LoaiXe.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_LoaiXe.Location = new System.Drawing.Point(160, 210);
-            this.TextBox_LoaiXe.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
-            this.TextBox_LoaiXe.Name = "TextBox_LoaiXe";
-            this.TextBox_LoaiXe.PasswordChar = '\0';
-            this.TextBox_LoaiXe.Radius = 10;
-            this.TextBox_LoaiXe.SelectedText = "";
-            this.TextBox_LoaiXe.Size = new System.Drawing.Size(294, 37);
-            this.TextBox_LoaiXe.TabIndex = 97;
             // 
             // TextBox_BienSo
             // 
@@ -354,7 +330,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(45, 376);
+            this.label6.Location = new System.Drawing.Point(45, 354);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 28);
             this.label6.TabIndex = 88;
@@ -365,7 +341,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(45, 323);
+            this.label5.Location = new System.Drawing.Point(45, 291);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 88;
@@ -376,22 +352,11 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(45, 270);
+            this.label4.Location = new System.Drawing.Point(45, 224);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 28);
             this.label4.TabIndex = 88;
             this.label4.Text = "Ngày gửi:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(45, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 28);
-            this.label2.TabIndex = 88;
-            this.label2.Text = "Loại xe:";
             // 
             // label17
             // 
@@ -432,7 +397,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
 
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -448,7 +412,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
         private Guna.UI.WinForms.GunaTextBox TextBox_Phi;
         private Guna.UI.WinForms.GunaDateTimePicker dtmNgayTra;
         private Guna.UI.WinForms.GunaDateTimePicker dtmNgayGui;
-        private Guna.UI.WinForms.GunaTextBox TextBox_LoaiXe;
         private Guna.UI.WinForms.GunaTextBox TextBox_BienSo;
         private Guna.UI.WinForms.GunaButton btnEdit;
     }

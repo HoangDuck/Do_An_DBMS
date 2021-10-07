@@ -1,5 +1,4 @@
-﻿using BaiGiuXeVer2.Forms.Registers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,12 +28,15 @@ namespace BaiGiuXeVer2.Forms.Manager
             showInfoStaffUC1.Visible = false;
             showListCarInPackUC1.Visible = false;
             statisticUC1.Visible = false;
+            registerUC1.Visible = false;
+            chiaCaUC1.Visible = false;
         }
         
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            frmRegister fReg = new frmRegister();
-            fReg.Show();
+            this.closeAllUC();
+            registerUC1.Visible = true;
+            registerUC1.BringToFront();
         }
 
         private void btnThongTin_Click(object sender, EventArgs e)
@@ -72,5 +74,11 @@ namespace BaiGiuXeVer2.Forms.Manager
             statisticUC1.BringToFront();
         }
 
+        private void btnChiaCa_Click(object sender, EventArgs e)
+        {
+            this.closeAllUC();
+            chiaCaUC1.Visible = true;
+            chiaCaUC1.BringToFront();
+        }
     }
 }

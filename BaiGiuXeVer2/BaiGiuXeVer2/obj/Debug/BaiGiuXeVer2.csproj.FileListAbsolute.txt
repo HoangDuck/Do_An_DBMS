@@ -72,7 +72,6 @@ C:\Users\ADMIN\Downloads\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.exe
 C:\Users\ADMIN\Downloads\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.pdb
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csproj.ResolveComReference.cache
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Login.frmLogin.resources
-C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Registers.frmRegister.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Properties.Resources.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csproj.GenerateResource.cache
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csproj.CoreCompileInputs.cache
@@ -96,3 +95,5 @@ C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Fo
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.showInfoStaffUC.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.showCalenderStaff.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.statisticUC.resources
+C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.chiaCaUC.resources
+C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.registerUC.resources
