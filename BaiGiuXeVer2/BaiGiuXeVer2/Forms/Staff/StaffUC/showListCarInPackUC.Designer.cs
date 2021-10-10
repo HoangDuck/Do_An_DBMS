@@ -46,10 +46,8 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.TextBoxt_GhiChu = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.dtmNgayTra = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.TextBox_LoaiXe = new Guna.UI.WinForms.GunaTextBox();
             this.TextBox_BienSo = new Guna.UI.WinForms.GunaTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -150,10 +148,8 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.groupBox2.Controls.Add(this.gunaTextBox1);
             this.groupBox2.Controls.Add(this.TextBoxt_GhiChu);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.gunaDateTimePicker1);
             this.groupBox2.Controls.Add(this.dtmNgayTra);
-            this.groupBox2.Controls.Add(this.TextBox_LoaiXe);
             this.groupBox2.Controls.Add(this.TextBox_BienSo);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label6);
@@ -235,7 +231,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Leelawadee UI", 15F);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(19, 169);
+            this.label9.Location = new System.Drawing.Point(19, 140);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(95, 28);
             this.label9.TabIndex = 21;
@@ -297,22 +293,11 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Leelawadee UI", 15F);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(19, 133);
+            this.label4.Location = new System.Drawing.Point(19, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 28);
             this.label4.TabIndex = 17;
             this.label4.Text = "Ngày gửi: ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Leelawadee UI", 15F);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(19, 90);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 28);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Loại xe:";
             // 
             // gunaDateTimePicker1
             // 
@@ -325,7 +310,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
             this.gunaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(132, 133);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(132, 97);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -351,7 +336,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.dtmNgayTra.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtmNgayTra.ForeColor = System.Drawing.Color.Black;
             this.dtmNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtmNgayTra.Location = new System.Drawing.Point(132, 169);
+            this.dtmNgayTra.Location = new System.Drawing.Point(132, 140);
             this.dtmNgayTra.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtmNgayTra.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtmNgayTra.Name = "dtmNgayTra";
@@ -365,26 +350,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.dtmNgayTra.Text = "22/04/2021";
             this.dtmNgayTra.Value = new System.DateTime(2021, 4, 22, 11, 37, 58, 266);
             this.dtmNgayTra.Visible = false;
-            // 
-            // TextBox_LoaiXe
-            // 
-            this.TextBox_LoaiXe.BackColor = System.Drawing.Color.Transparent;
-            this.TextBox_LoaiXe.BaseColor = System.Drawing.Color.White;
-            this.TextBox_LoaiXe.BorderColor = System.Drawing.Color.Silver;
-            this.TextBox_LoaiXe.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_LoaiXe.FocusedBaseColor = System.Drawing.Color.White;
-            this.TextBox_LoaiXe.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TextBox_LoaiXe.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TextBox_LoaiXe.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.TextBox_LoaiXe.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_LoaiXe.Location = new System.Drawing.Point(133, 90);
-            this.TextBox_LoaiXe.Name = "TextBox_LoaiXe";
-            this.TextBox_LoaiXe.PasswordChar = '\0';
-            this.TextBox_LoaiXe.Radius = 10;
-            this.TextBox_LoaiXe.SelectedText = "";
-            this.TextBox_LoaiXe.Size = new System.Drawing.Size(160, 37);
-            this.TextBox_LoaiXe.TabIndex = 29;
-            this.TextBox_LoaiXe.Visible = false;
             // 
             // TextBox_BienSo
             // 
@@ -524,7 +489,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
         private System.Windows.Forms.Label label17;
         private Guna.UI.WinForms.GunaTextBox TextBoxt_GhiChu;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaDateTimePicker dtmNgayTra;
         private Guna.UI.WinForms.GunaTextBox TextBox_BienSo;
         private System.Windows.Forms.Label label6;
@@ -539,7 +503,6 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaTextBox TextBox_LoaiXe;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
     }
 }
