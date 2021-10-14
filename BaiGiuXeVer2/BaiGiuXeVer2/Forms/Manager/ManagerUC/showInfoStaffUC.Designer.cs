@@ -34,11 +34,13 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnEdit = new Guna.UI.WinForms.GunaButton();
+            this.btn_search = new Guna.UI.WinForms.GunaButton();
             this.TextBox_Search = new Guna.UI.WinForms.GunaTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new Guna.UI.WinForms.GunaGroupBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.btn_remove = new Guna.UI.WinForms.GunaButton();
+            this.Pic_ADD = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TextBox_DiaChi = new Guna.UI.WinForms.GunaTextBox();
@@ -57,13 +59,12 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rdoMaSo = new Guna.UI.WinForms.GunaRadioButton();
             this.rboHoTen = new Guna.UI.WinForms.GunaRadioButton();
-            this.Pic_ADD = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.btn_edit = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_ADD)).BeginInit();
             this.GroupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_ADD)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaDataGridView1
@@ -94,7 +95,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(24, 399);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(32, 394);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -134,32 +135,32 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.label8.TabIndex = 112;
             this.label8.Text = "DANH SÁCH NHÂN VIÊN";
             // 
-            // btnEdit
+            // btn_search
             // 
-            this.btnEdit.AnimationHoverSpeed = 0.07F;
-            this.btnEdit.AnimationSpeed = 0.03F;
-            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
-            this.btnEdit.BaseColor = System.Drawing.Color.White;
-            this.btnEdit.BorderColor = System.Drawing.Color.Gray;
-            this.btnEdit.BorderSize = 3;
-            this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnEdit.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.btnEdit.ForeColor = System.Drawing.Color.Gray;
-            this.btnEdit.Image = null;
-            this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEdit.Location = new System.Drawing.Point(215, 200);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEdit.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnEdit.OnHoverImage = null;
-            this.btnEdit.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEdit.Radius = 8;
-            this.btnEdit.Size = new System.Drawing.Size(93, 41);
-            this.btnEdit.TabIndex = 109;
-            this.btnEdit.Text = "Tìm";
-            this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_search.AnimationHoverSpeed = 0.07F;
+            this.btn_search.AnimationSpeed = 0.03F;
+            this.btn_search.BackColor = System.Drawing.Color.Transparent;
+            this.btn_search.BaseColor = System.Drawing.Color.White;
+            this.btn_search.BorderColor = System.Drawing.Color.Gray;
+            this.btn_search.BorderSize = 3;
+            this.btn_search.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_search.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_search.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.btn_search.ForeColor = System.Drawing.Color.Gray;
+            this.btn_search.Image = null;
+            this.btn_search.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_search.Location = new System.Drawing.Point(215, 200);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_search.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_search.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_search.OnHoverImage = null;
+            this.btn_search.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_search.Radius = 8;
+            this.btn_search.Size = new System.Drawing.Size(93, 41);
+            this.btn_search.TabIndex = 109;
+            this.btn_search.Text = "Tìm";
+            this.btn_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBox_Search
             // 
@@ -197,7 +198,8 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.groupBox2.BaseColor = System.Drawing.Color.White;
             this.groupBox2.BorderColor = System.Drawing.Color.Gray;
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.gunaButton1);
+            this.groupBox2.Controls.Add(this.btn_edit);
+            this.groupBox2.Controls.Add(this.btn_remove);
             this.groupBox2.Controls.Add(this.Pic_ADD);
             this.groupBox2.Controls.Add(this.gunaTextBox1);
             this.groupBox2.Controls.Add(this.label1);
@@ -234,6 +236,45 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.label10.Size = new System.Drawing.Size(111, 21);
             this.label10.TabIndex = 130;
             this.label10.Text = "Ảnh đại diện:";
+            // 
+            // btn_remove
+            // 
+            this.btn_remove.AnimationHoverSpeed = 0.07F;
+            this.btn_remove.AnimationSpeed = 0.03F;
+            this.btn_remove.BackColor = System.Drawing.Color.Transparent;
+            this.btn_remove.BaseColor = System.Drawing.Color.Gray;
+            this.btn_remove.BorderColor = System.Drawing.Color.Gray;
+            this.btn_remove.BorderSize = 3;
+            this.btn_remove.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_remove.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_remove.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_remove.ForeColor = System.Drawing.Color.White;
+            this.btn_remove.Image = null;
+            this.btn_remove.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_remove.Location = new System.Drawing.Point(624, 251);
+            this.btn_remove.Name = "btn_remove";
+            this.btn_remove.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_remove.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_remove.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_remove.OnHoverImage = null;
+            this.btn_remove.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_remove.Radius = 8;
+            this.btn_remove.Size = new System.Drawing.Size(78, 28);
+            this.btn_remove.TabIndex = 109;
+            this.btn_remove.Text = "Xóa";
+            this.btn_remove.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Pic_ADD
+            // 
+            this.Pic_ADD.BaseColor = System.Drawing.Color.White;
+            this.Pic_ADD.Image = global::BaiGiuXeVer2.Properties.Resources.default_DDLK_avatar;
+            this.Pic_ADD.Location = new System.Drawing.Point(486, 117);
+            this.Pic_ADD.Name = "Pic_ADD";
+            this.Pic_ADD.Size = new System.Drawing.Size(102, 102);
+            this.Pic_ADD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_ADD.TabIndex = 129;
+            this.Pic_ADD.TabStop = false;
+            this.Pic_ADD.UseTransfarantBackground = false;
             // 
             // gunaTextBox1
             // 
@@ -465,7 +506,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.GroupBox1.BaseColor = System.Drawing.Color.White;
             this.GroupBox1.BorderColor = System.Drawing.Color.Gray;
             this.GroupBox1.Controls.Add(this.groupBox3);
-            this.GroupBox1.Controls.Add(this.btnEdit);
+            this.GroupBox1.Controls.Add(this.btn_search);
             this.GroupBox1.Controls.Add(this.TextBox_Search);
             this.GroupBox1.Controls.Add(this.label2);
             this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -517,44 +558,32 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             this.rboHoTen.TabIndex = 0;
             this.rboHoTen.Text = "Họ Tên";
             // 
-            // Pic_ADD
+            // btn_edit
             // 
-            this.Pic_ADD.BaseColor = System.Drawing.Color.White;
-            this.Pic_ADD.Image = global::BaiGiuXeVer2.Properties.Resources.default_DDLK_avatar;
-            this.Pic_ADD.Location = new System.Drawing.Point(486, 117);
-            this.Pic_ADD.Name = "Pic_ADD";
-            this.Pic_ADD.Size = new System.Drawing.Size(102, 102);
-            this.Pic_ADD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pic_ADD.TabIndex = 129;
-            this.Pic_ADD.TabStop = false;
-            this.Pic_ADD.UseTransfarantBackground = false;
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.Gray;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Gray;
-            this.gunaButton1.BorderSize = 3;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(280, 229);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Radius = 8;
-            this.gunaButton1.Size = new System.Drawing.Size(93, 41);
-            this.gunaButton1.TabIndex = 109;
-            this.gunaButton1.Text = "Xóa";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_edit.AnimationHoverSpeed = 0.07F;
+            this.btn_edit.AnimationSpeed = 0.03F;
+            this.btn_edit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_edit.BaseColor = System.Drawing.Color.Gray;
+            this.btn_edit.BorderColor = System.Drawing.Color.Gray;
+            this.btn_edit.BorderSize = 3;
+            this.btn_edit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_edit.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_edit.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.btn_edit.ForeColor = System.Drawing.Color.White;
+            this.btn_edit.Image = null;
+            this.btn_edit.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_edit.Location = new System.Drawing.Point(221, 226);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_edit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_edit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_edit.OnHoverImage = null;
+            this.btn_edit.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_edit.Radius = 8;
+            this.btn_edit.Size = new System.Drawing.Size(242, 41);
+            this.btn_edit.TabIndex = 109;
+            this.btn_edit.Text = "Lưu";
+            this.btn_edit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // showInfoStaffUC
             // 
@@ -569,11 +598,11 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_ADD)).EndInit();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_ADD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,7 +612,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
 
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaButton btnEdit;
+        private Guna.UI.WinForms.GunaButton btn_search;
         private Guna.UI.WinForms.GunaTextBox TextBox_Search;
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaGroupBox groupBox2;
@@ -607,6 +636,7 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
         private Guna.UI.WinForms.GunaRadioButton rdoMaSo;
         private Guna.UI.WinForms.GunaRadioButton rboHoTen;
         private System.Windows.Forms.Label label10;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton btn_remove;
+        private Guna.UI.WinForms.GunaButton btn_edit;
     }
 }
