@@ -20,6 +20,8 @@ namespace BaiGiuXeVer2.Forms.Staff
         private void mainFormStaff_Load(object sender, EventArgs e)
         {
             this.closeAllUC();
+            this.shiftInformationUC1.Visible = true;
+            this.shiftInformationUC1.BringToFront();
         }
 
         private void closeAllUC()
