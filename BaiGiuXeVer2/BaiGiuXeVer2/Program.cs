@@ -18,8 +18,8 @@ namespace BaiGiuXeVer2
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Forms.Login.frmLogin());
             //Application.Run(new Forms.Registers.frmRegister());
-            Application.Run(new Forms.Staff.mainFormStaff());
-            //Application.Run(new Forms.Manager.mainFormManager());
+            //Application.Run(new Forms.Staff.mainFormStaff());
+            Application.Run(new Forms.Manager.mainFormManager());
 
         }
     }

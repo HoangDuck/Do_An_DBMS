@@ -16,5 +16,17 @@ namespace BaiGiuXeVer2.Forms.Manager.ManagerUC
         {
             InitializeComponent();
         }
+
+        private void cboVaiTro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cboVaiTro.Text == "Admin")
+            {
+                cboQuanLy.Enabled = false;
+            }
+            else
+            {
+                cboQuanLy.Enabled = true;
+            }
+        }
     }
 }
