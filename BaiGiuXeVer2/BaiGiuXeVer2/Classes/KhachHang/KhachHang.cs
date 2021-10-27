@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,15 +20,12 @@ namespace BaiGiuXeVer2.Classes.KhachHang
             sqlDataAdapter.Fill(data);
             return data;
         }
-        public bool themKhachHang(int maKH, string tenKH, string diachi, string sdt,string uname,string pass)
+        public bool themKhachHang(String bienxe,String tenKH,String diachi,String sdt,MemoryStream anh)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO Users values(@maKH,@tenKH,@diachi,@sdt,@uname,@pass)", myDB.GetSqlConnection);
-            command.Parameters.Add("@maKH", SqlDbType.Int).Value = maKH;
-            command.Parameters.Add("@tenKH", SqlDbType.NChar).Value = tenKH;
-            command.Parameters.Add("@diachi", SqlDbType.NChar).Value = diachi;
-            command.Parameters.Add("@sdt", SqlDbType.NChar).Value = sdt;
-            command.Parameters.Add("@uname", SqlDbType.NChar).Value = uname;
-            command.Parameters.Add("@pass", SqlDbType.NChar).Value = pass;
+
+            SqlCommand command = new SqlCommand("Exec [dbo].[insert_Khach_hang_thang]"+bienxe+","+tenKH + "," +diachi + "," +
+                sdt + "," +anh, myDB.GetSqlConnection);
+            
             myDB.OpenConnection();
             if (command.ExecuteNonQuery() == 1)
             {
@@ -40,7 +38,22 @@ namespace BaiGiuXeVer2.Classes.KhachHang
                 return false;
             }
         }
+        public bool dangkyThang(String bienxe,DateTime ngaydk,DateTime ngayhh,int phi)
+        {
+            SqlCommand command = new SqlCommand("Exec [dbo].[insert_Dang_ky_thang]" + bienxe + "," + ngaydk + "," + ngayhh + "," +phi, myDB.GetSqlConnection);
 
+            myDB.OpenConnection();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                myDB.ClosedConnection();
+                return true;
+            }
+            else
+            {
+                myDB.ClosedConnection();
+                return false;
+            }
+        }
         public bool khachhangExist(int maKH)
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Users where Id=@maKH", myDB.GetSqlConnection);

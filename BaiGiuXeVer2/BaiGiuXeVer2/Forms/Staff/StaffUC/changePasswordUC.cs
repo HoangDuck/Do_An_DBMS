@@ -116,5 +116,25 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
                 }
             }
         }
+
+        private void btnChange_Click(object sender, EventArgs e)
+        {
+            Classes.NhanVien.NhanVien nv = new Classes.NhanVien.NhanVien();
+            if ((textNewPassword.Text != textConfirmNewPassword.Text) ||(textNewPassword.Text == ""))
+            {
+                MessageBox.Show("Mật khẩu mới không khớp", "Đổi mật khẩu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (nv.changePass(textCurrentPassword.Text.Trim(), textNewPassword.Text.Trim(), 1))
+                {
+                    MessageBox.Show("Đã đổi mật khẩu", "Đổi mật khẩu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Mật khẩu không khớp", "Đổi mật khẩu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }    
+            }
+        }
     }
 }

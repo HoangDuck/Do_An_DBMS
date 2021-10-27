@@ -97,3 +97,29 @@ C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Fo
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.statisticUC.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.chiaCaUC.resources
 C:\1D\HocTap\DBMS\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.registerUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\bin\Debug\BaiGiuXeVer2.exe.config
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\bin\Debug\BaiGiuXeVer2.exe
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\bin\Debug\BaiGiuXeVer2.pdb
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csprojAssemblyReference.cache
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csproj.ResolveComReference.cache
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Login.frmLogin.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.mainFormManager.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.chiaCaUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.registerUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.showInfoStaffUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.ManagerUC.statisticUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Manager.showCalenderStaff.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.mainFormStaff.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.calendarUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.changePasswordUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.checkInOutCarUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.editProfileUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.receiveCarUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.shiftInformationUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Forms.Staff.StaffUC.showListCarInPackUC.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.Properties.Resources.resources
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csproj.GenerateResource.cache
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csproj.CoreCompileInputs.cache
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.csproj.CopyComplete
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.exe
+D:\Hệ quản trị CSDL\do an\Do_An_DBMS\BaiGiuXeVer2\BaiGiuXeVer2\obj\Debug\BaiGiuXeVer2.pdb

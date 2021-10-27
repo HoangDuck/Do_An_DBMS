@@ -150,6 +150,7 @@
       <DependentUpon>showListCarInPackUC.cs</DependentUpon>
     </Compile>
     <Compile Include="MyDB\MyDBChuyenMon.cs" />
+    <Compile Include="MyDB\MyDBNV.cs" />
     <Compile Include="MyDB\MyDBParkLogin.cs" />
     <Compile Include="MyDB\MyDBXe.cs" />
     <Compile Include="Program.cs" />
