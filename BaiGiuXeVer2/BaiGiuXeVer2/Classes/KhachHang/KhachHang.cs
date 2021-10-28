@@ -54,6 +54,22 @@ namespace BaiGiuXeVer2.Classes.KhachHang
                 return false;
             }
         }
+        public DataTable getKhNgay(SqlCommand command)
+        {
+            command.Connection = myDB.GetSqlConnection;
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+        public DataTable getXeTrongbai(SqlCommand command)
+        {
+            command.Connection = myDB.GetSqlConnection;
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
         public bool khachhangExist(int maKH)
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Users where Id=@maKH", myDB.GetSqlConnection);

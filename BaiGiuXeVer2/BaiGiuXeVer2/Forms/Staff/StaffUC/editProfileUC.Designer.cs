@@ -75,7 +75,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.gunaShadowPanel1.Controls.Add(this.btnEdit);
             this.gunaShadowPanel1.Controls.Add(this.label1);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(407, 47);
-            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.Radius = 10;
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
@@ -96,6 +96,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.pic_bienso.TabIndex = 92;
             this.pic_bienso.TabStop = false;
             this.pic_bienso.UseTransfarantBackground = false;
+            this.pic_bienso.Click += new System.EventHandler(this.pic_bienso_Click);
             // 
             // dtmNgaySinh
             // 
@@ -338,7 +339,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.TextBox_MaSo.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.TextBox_MaSo.ForeColor = System.Drawing.Color.Black;
             this.TextBox_MaSo.Location = new System.Drawing.Point(191, 153);
-            this.TextBox_MaSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_MaSo.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_MaSo.Name = "TextBox_MaSo";
             this.TextBox_MaSo.PasswordChar = '\0';
             this.TextBox_MaSo.Radius = 10;
@@ -361,7 +362,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.btnEdit.Image = null;
             this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEdit.Location = new System.Drawing.Point(192, 789);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -391,7 +392,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gunaShadowPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "editProfileUC";
             this.Size = new System.Drawing.Size(1436, 985);
             this.Load += new System.EventHandler(this.editProfileUC_Load);

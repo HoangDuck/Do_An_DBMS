@@ -75,7 +75,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.gunaShadowPanel1.Controls.Add(this.label17);
             this.gunaShadowPanel1.Controls.Add(this.label1);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(117, 50);
-            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.Radius = 10;
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
@@ -98,7 +98,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.btnEdit.Image = null;
             this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEdit.Location = new System.Drawing.Point(179, 583);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -124,6 +124,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.pic_bienso.TabIndex = 107;
             this.pic_bienso.TabStop = false;
             this.pic_bienso.UseTransfarantBackground = false;
+            this.pic_bienso.Click += new System.EventHandler(this.pic_bienso_Click);
             // 
             // TextBox_SDT
             // 
@@ -396,7 +397,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gunaShadowPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "receiveCarUC";
             this.Size = new System.Drawing.Size(1436, 985);
             this.gunaShadowPanel1.ResumeLayout(false);

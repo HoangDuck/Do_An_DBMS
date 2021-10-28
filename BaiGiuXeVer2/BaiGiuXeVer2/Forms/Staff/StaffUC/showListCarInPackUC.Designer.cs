@@ -37,25 +37,29 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.TextBox_Search = new Guna.UI.WinForms.GunaTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
+            this.TextBox_Phat = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.Textbox_SDT = new Guna.UI.WinForms.GunaTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
-            this.TextBoxt_GhiChu = new Guna.UI.WinForms.GunaTextBox();
+            this.Textbox_TenKH = new Guna.UI.WinForms.GunaTextBox();
+            this.TextBoxt_DiaChi = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.dtmNgayGui = new Guna.UI.WinForms.GunaDateTimePicker();
             this.dtmNgayTra = new Guna.UI.WinForms.GunaDateTimePicker();
             this.TextBox_BienSo = new Guna.UI.WinForms.GunaTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.dataGridViewXe = new Guna.UI.WinForms.GunaDataGridView();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.radiobtnThang = new Guna.UI.WinForms.GunaRadioButton();
+            this.radiobtnNgay = new Guna.UI.WinForms.GunaRadioButton();
             this.GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXe)).BeginInit();
+            this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupBox1
@@ -63,6 +67,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.GroupBox1.BaseColor = System.Drawing.Color.White;
             this.GroupBox1.BorderColor = System.Drawing.Color.Gray;
+            this.GroupBox1.Controls.Add(this.gunaPanel1);
             this.GroupBox1.Controls.Add(this.btnEdit);
             this.GroupBox1.Controls.Add(this.TextBox_Search);
             this.GroupBox1.Controls.Add(this.label2);
@@ -70,7 +75,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.GroupBox1.ForeColor = System.Drawing.Color.White;
             this.GroupBox1.LineColor = System.Drawing.Color.Gray;
             this.GroupBox1.Location = new System.Drawing.Point(32, 107);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Radius = 10;
             this.GroupBox1.Size = new System.Drawing.Size(429, 295);
@@ -93,7 +98,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.btnEdit.Image = null;
             this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEdit.Location = new System.Drawing.Point(282, 209);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -105,6 +110,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.btnEdit.TabIndex = 109;
             this.btnEdit.Text = "Tìm";
             this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // TextBox_Search
             // 
@@ -118,7 +124,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.TextBox_Search.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.TextBox_Search.ForeColor = System.Drawing.Color.Black;
             this.TextBox_Search.Location = new System.Drawing.Point(21, 209);
-            this.TextBox_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_Search.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_Search.Name = "TextBox_Search";
             this.TextBox_Search.PasswordChar = '\0';
             this.TextBox_Search.Radius = 10;
@@ -131,7 +137,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Leelawadee UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(52, 69);
+            this.label2.Location = new System.Drawing.Point(55, 58);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(289, 35);
@@ -143,16 +149,16 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.BaseColor = System.Drawing.Color.White;
             this.groupBox2.BorderColor = System.Drawing.Color.Gray;
-            this.groupBox2.Controls.Add(this.gunaTextBox3);
+            this.groupBox2.Controls.Add(this.TextBox_Phat);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.gunaTextBox2);
+            this.groupBox2.Controls.Add(this.Textbox_SDT);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.gunaTextBox1);
-            this.groupBox2.Controls.Add(this.TextBoxt_GhiChu);
+            this.groupBox2.Controls.Add(this.Textbox_TenKH);
+            this.groupBox2.Controls.Add(this.TextBoxt_DiaChi);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.gunaDateTimePicker1);
+            this.groupBox2.Controls.Add(this.dtmNgayGui);
             this.groupBox2.Controls.Add(this.dtmNgayTra);
             this.groupBox2.Controls.Add(this.TextBox_BienSo);
             this.groupBox2.Controls.Add(this.label1);
@@ -161,7 +167,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.LineColor = System.Drawing.Color.Gray;
             this.groupBox2.Location = new System.Drawing.Point(464, 107);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Radius = 10;
             this.groupBox2.Size = new System.Drawing.Size(940, 295);
@@ -169,26 +175,26 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.groupBox2.Text = "Thông tin xe";
             this.groupBox2.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // gunaTextBox3
+            // TextBox_Phat
             // 
-            this.gunaTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.gunaTextBox3.ForeColor = System.Drawing.Color.Black;
-            this.gunaTextBox3.Location = new System.Drawing.Point(628, 217);
-            this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gunaTextBox3.Name = "gunaTextBox3";
-            this.gunaTextBox3.PasswordChar = '\0';
-            this.gunaTextBox3.Radius = 10;
-            this.gunaTextBox3.SelectedText = "";
-            this.gunaTextBox3.Size = new System.Drawing.Size(249, 54);
-            this.gunaTextBox3.TabIndex = 45;
-            this.gunaTextBox3.Visible = false;
+            this.TextBox_Phat.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_Phat.BaseColor = System.Drawing.Color.White;
+            this.TextBox_Phat.BorderColor = System.Drawing.Color.Silver;
+            this.TextBox_Phat.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_Phat.FocusedBaseColor = System.Drawing.Color.White;
+            this.TextBox_Phat.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TextBox_Phat.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TextBox_Phat.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.TextBox_Phat.ForeColor = System.Drawing.Color.Black;
+            this.TextBox_Phat.Location = new System.Drawing.Point(628, 217);
+            this.TextBox_Phat.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_Phat.Name = "TextBox_Phat";
+            this.TextBox_Phat.PasswordChar = '\0';
+            this.TextBox_Phat.Radius = 10;
+            this.TextBox_Phat.SelectedText = "";
+            this.TextBox_Phat.Size = new System.Drawing.Size(249, 54);
+            this.TextBox_Phat.TabIndex = 45;
+            this.TextBox_Phat.Visible = false;
             // 
             // label5
             // 
@@ -202,26 +208,26 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label5.TabIndex = 44;
             this.label5.Text = "Phạt:";
             // 
-            // gunaTextBox2
+            // Textbox_SDT
             // 
-            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.gunaTextBox2.ForeColor = System.Drawing.Color.Black;
-            this.gunaTextBox2.Location = new System.Drawing.Point(628, 164);
-            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Radius = 10;
-            this.gunaTextBox2.SelectedText = "";
-            this.gunaTextBox2.Size = new System.Drawing.Size(249, 54);
-            this.gunaTextBox2.TabIndex = 43;
-            this.gunaTextBox2.Visible = false;
+            this.Textbox_SDT.BackColor = System.Drawing.Color.Transparent;
+            this.Textbox_SDT.BaseColor = System.Drawing.Color.White;
+            this.Textbox_SDT.BorderColor = System.Drawing.Color.Silver;
+            this.Textbox_SDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Textbox_SDT.FocusedBaseColor = System.Drawing.Color.White;
+            this.Textbox_SDT.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Textbox_SDT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.Textbox_SDT.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.Textbox_SDT.ForeColor = System.Drawing.Color.Black;
+            this.Textbox_SDT.Location = new System.Drawing.Point(628, 164);
+            this.Textbox_SDT.Margin = new System.Windows.Forms.Padding(4);
+            this.Textbox_SDT.Name = "Textbox_SDT";
+            this.Textbox_SDT.PasswordChar = '\0';
+            this.Textbox_SDT.Radius = 10;
+            this.Textbox_SDT.SelectedText = "";
+            this.Textbox_SDT.Size = new System.Drawing.Size(249, 54);
+            this.Textbox_SDT.TabIndex = 43;
+            this.Textbox_SDT.Visible = false;
             // 
             // label3
             // 
@@ -259,47 +265,47 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label17.TabIndex = 26;
             this.label17.Text = "Biển số:";
             // 
-            // gunaTextBox1
+            // Textbox_TenKH
             // 
-            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.gunaTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaTextBox1.Location = new System.Drawing.Point(628, 58);
-            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Radius = 10;
-            this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(249, 54);
-            this.gunaTextBox1.TabIndex = 41;
-            this.gunaTextBox1.Visible = false;
+            this.Textbox_TenKH.BackColor = System.Drawing.Color.Transparent;
+            this.Textbox_TenKH.BaseColor = System.Drawing.Color.White;
+            this.Textbox_TenKH.BorderColor = System.Drawing.Color.Silver;
+            this.Textbox_TenKH.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Textbox_TenKH.FocusedBaseColor = System.Drawing.Color.White;
+            this.Textbox_TenKH.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Textbox_TenKH.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.Textbox_TenKH.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.Textbox_TenKH.ForeColor = System.Drawing.Color.Black;
+            this.Textbox_TenKH.Location = new System.Drawing.Point(628, 58);
+            this.Textbox_TenKH.Margin = new System.Windows.Forms.Padding(4);
+            this.Textbox_TenKH.Name = "Textbox_TenKH";
+            this.Textbox_TenKH.PasswordChar = '\0';
+            this.Textbox_TenKH.Radius = 10;
+            this.Textbox_TenKH.SelectedText = "";
+            this.Textbox_TenKH.Size = new System.Drawing.Size(249, 54);
+            this.Textbox_TenKH.TabIndex = 41;
+            this.Textbox_TenKH.Visible = false;
             // 
-            // TextBoxt_GhiChu
+            // TextBoxt_DiaChi
             // 
-            this.TextBoxt_GhiChu.BackColor = System.Drawing.Color.Transparent;
-            this.TextBoxt_GhiChu.BaseColor = System.Drawing.Color.White;
-            this.TextBoxt_GhiChu.BorderColor = System.Drawing.Color.Silver;
-            this.TextBoxt_GhiChu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxt_GhiChu.FocusedBaseColor = System.Drawing.Color.White;
-            this.TextBoxt_GhiChu.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TextBoxt_GhiChu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TextBoxt_GhiChu.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.TextBoxt_GhiChu.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxt_GhiChu.Location = new System.Drawing.Point(628, 111);
-            this.TextBoxt_GhiChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TextBoxt_GhiChu.Name = "TextBoxt_GhiChu";
-            this.TextBoxt_GhiChu.PasswordChar = '\0';
-            this.TextBoxt_GhiChu.Radius = 10;
-            this.TextBoxt_GhiChu.SelectedText = "";
-            this.TextBoxt_GhiChu.Size = new System.Drawing.Size(249, 54);
-            this.TextBoxt_GhiChu.TabIndex = 41;
-            this.TextBoxt_GhiChu.Visible = false;
+            this.TextBoxt_DiaChi.BackColor = System.Drawing.Color.Transparent;
+            this.TextBoxt_DiaChi.BaseColor = System.Drawing.Color.White;
+            this.TextBoxt_DiaChi.BorderColor = System.Drawing.Color.Silver;
+            this.TextBoxt_DiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxt_DiaChi.FocusedBaseColor = System.Drawing.Color.White;
+            this.TextBoxt_DiaChi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TextBoxt_DiaChi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TextBoxt_DiaChi.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.TextBoxt_DiaChi.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxt_DiaChi.Location = new System.Drawing.Point(628, 111);
+            this.TextBoxt_DiaChi.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBoxt_DiaChi.Name = "TextBoxt_DiaChi";
+            this.TextBoxt_DiaChi.PasswordChar = '\0';
+            this.TextBoxt_DiaChi.Radius = 10;
+            this.TextBoxt_DiaChi.SelectedText = "";
+            this.TextBoxt_DiaChi.Size = new System.Drawing.Size(249, 54);
+            this.TextBoxt_DiaChi.TabIndex = 41;
+            this.TextBoxt_DiaChi.Visible = false;
             // 
             // label4
             // 
@@ -313,32 +319,32 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label4.TabIndex = 17;
             this.label4.Text = "Ngày gửi: ";
             // 
-            // gunaDateTimePicker1
+            // dtmNgayGui
             // 
-            this.gunaDateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(176, 119);
-            this.gunaDateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
-            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Radius = 10;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(249, 37);
-            this.gunaDateTimePicker1.TabIndex = 39;
-            this.gunaDateTimePicker1.Text = "22/04/2021";
-            this.gunaDateTimePicker1.Value = new System.DateTime(2021, 4, 22, 11, 37, 58, 266);
-            this.gunaDateTimePicker1.Visible = false;
+            this.dtmNgayGui.BackColor = System.Drawing.Color.Transparent;
+            this.dtmNgayGui.BaseColor = System.Drawing.Color.White;
+            this.dtmNgayGui.BorderColor = System.Drawing.Color.Silver;
+            this.dtmNgayGui.CustomFormat = "dd/MM/yyyy";
+            this.dtmNgayGui.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtmNgayGui.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtmNgayGui.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtmNgayGui.ForeColor = System.Drawing.Color.Black;
+            this.dtmNgayGui.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtmNgayGui.Location = new System.Drawing.Point(176, 119);
+            this.dtmNgayGui.Margin = new System.Windows.Forms.Padding(4);
+            this.dtmNgayGui.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtmNgayGui.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtmNgayGui.Name = "dtmNgayGui";
+            this.dtmNgayGui.OnHoverBaseColor = System.Drawing.Color.White;
+            this.dtmNgayGui.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtmNgayGui.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtmNgayGui.OnPressedColor = System.Drawing.Color.Black;
+            this.dtmNgayGui.Radius = 10;
+            this.dtmNgayGui.Size = new System.Drawing.Size(249, 37);
+            this.dtmNgayGui.TabIndex = 39;
+            this.dtmNgayGui.Text = "22/04/2021";
+            this.dtmNgayGui.Value = new System.DateTime(2021, 4, 22, 11, 37, 58, 266);
+            this.dtmNgayGui.Visible = false;
             // 
             // dtmNgayTra
             // 
@@ -352,7 +358,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.dtmNgayTra.ForeColor = System.Drawing.Color.Black;
             this.dtmNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtmNgayTra.Location = new System.Drawing.Point(176, 172);
-            this.dtmNgayTra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtmNgayTra.Margin = new System.Windows.Forms.Padding(4);
             this.dtmNgayTra.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtmNgayTra.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtmNgayTra.Name = "dtmNgayTra";
@@ -379,7 +385,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.TextBox_BienSo.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.TextBox_BienSo.ForeColor = System.Drawing.Color.Black;
             this.TextBox_BienSo.Location = new System.Drawing.Point(176, 58);
-            this.TextBox_BienSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_BienSo.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_BienSo.Name = "TextBox_BienSo";
             this.TextBox_BienSo.PasswordChar = '\0';
             this.TextBox_BienSo.Radius = 10;
@@ -424,15 +430,15 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             this.label8.TabIndex = 108;
             this.label8.Text = "DANH SÁCH XE TRONG BÃI";
             // 
-            // gunaDataGridView1
+            // dataGridViewXe
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewXe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewXe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewXe.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewXe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewXe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridViewXe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -440,8 +446,8 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridView1.ColumnHeadersHeight = 4;
+            this.dataGridViewXe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewXe.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -449,56 +455,94 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gunaDataGridView1.EnableHeadersVisualStyles = false;
-            this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(32, 410);
-            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gunaDataGridView1.Name = "gunaDataGridView1";
-            this.gunaDataGridView1.RowHeadersVisible = false;
-            this.gunaDataGridView1.RowHeadersWidth = 51;
-            this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(1372, 556);
-            this.gunaDataGridView1.TabIndex = 109;
-            this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridViewXe.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewXe.EnableHeadersVisualStyles = false;
+            this.dataGridViewXe.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridViewXe.Location = new System.Drawing.Point(32, 410);
+            this.dataGridViewXe.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewXe.Name = "dataGridViewXe";
+            this.dataGridViewXe.RowHeadersVisible = false;
+            this.dataGridViewXe.RowHeadersWidth = 51;
+            this.dataGridViewXe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewXe.Size = new System.Drawing.Size(1372, 556);
+            this.dataGridViewXe.TabIndex = 109;
+            this.dataGridViewXe.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dataGridViewXe.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewXe.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridViewXe.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridViewXe.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridViewXe.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridViewXe.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewXe.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridViewXe.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGridViewXe.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewXe.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataGridViewXe.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridViewXe.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataGridViewXe.ThemeStyle.HeaderStyle.Height = 4;
+            this.dataGridViewXe.ThemeStyle.ReadOnly = false;
+            this.dataGridViewXe.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewXe.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridViewXe.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataGridViewXe.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridViewXe.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridViewXe.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridViewXe.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Controls.Add(this.radiobtnNgay);
+            this.gunaPanel1.Controls.Add(this.radiobtnThang);
+            this.gunaPanel1.Location = new System.Drawing.Point(39, 111);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(315, 66);
+            this.gunaPanel1.TabIndex = 110;
+            // 
+            // radiobtnThang
+            // 
+            this.radiobtnThang.BaseColor = System.Drawing.SystemColors.Control;
+            this.radiobtnThang.CheckedOffColor = System.Drawing.Color.Gray;
+            this.radiobtnThang.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.radiobtnThang.FillColor = System.Drawing.Color.White;
+            this.radiobtnThang.ForeColor = System.Drawing.Color.Black;
+            this.radiobtnThang.Location = new System.Drawing.Point(182, 18);
+            this.radiobtnThang.Name = "radiobtnThang";
+            this.radiobtnThang.Size = new System.Drawing.Size(93, 27);
+            this.radiobtnThang.TabIndex = 0;
+            this.radiobtnThang.Text = "Tháng";
+            // 
+            // radiobtnNgay
+            // 
+            this.radiobtnNgay.BaseColor = System.Drawing.SystemColors.Control;
+            this.radiobtnNgay.CheckedOffColor = System.Drawing.Color.Gray;
+            this.radiobtnNgay.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.radiobtnNgay.FillColor = System.Drawing.Color.White;
+            this.radiobtnNgay.ForeColor = System.Drawing.Color.Black;
+            this.radiobtnNgay.Location = new System.Drawing.Point(22, 18);
+            this.radiobtnNgay.Name = "radiobtnNgay";
+            this.radiobtnNgay.Size = new System.Drawing.Size(82, 27);
+            this.radiobtnNgay.TabIndex = 1;
+            this.radiobtnNgay.Text = "Ngày";
             // 
             // showListCarInPackUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gunaDataGridView1);
+            this.Controls.Add(this.dataGridViewXe);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "showListCarInPackUC";
             this.Size = new System.Drawing.Size(1436, 985);
+            this.Load += new System.EventHandler(this.showListCarInPackUC_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXe)).EndInit();
+            this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,7 +554,7 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
         private Guna.UI.WinForms.GunaGroupBox groupBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label17;
-        private Guna.UI.WinForms.GunaTextBox TextBoxt_GhiChu;
+        private Guna.UI.WinForms.GunaTextBox TextBoxt_DiaChi;
         private System.Windows.Forms.Label label4;
         private Guna.UI.WinForms.GunaDateTimePicker dtmNgayTra;
         private Guna.UI.WinForms.GunaTextBox TextBox_BienSo;
@@ -518,14 +562,17 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
         private Guna.UI.WinForms.GunaTextBox TextBox_Search;
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaButton btnEdit;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox3;
+        private Guna.UI.WinForms.GunaTextBox TextBox_Phat;
         private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaTextBox Textbox_SDT;
         private System.Windows.Forms.Label label3;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private Guna.UI.WinForms.GunaTextBox Textbox_TenKH;
+        private Guna.UI.WinForms.GunaDateTimePicker dtmNgayGui;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
+        private Guna.UI.WinForms.GunaDataGridView dataGridViewXe;
+        private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaRadioButton radiobtnNgay;
+        private Guna.UI.WinForms.GunaRadioButton radiobtnThang;
     }
 }

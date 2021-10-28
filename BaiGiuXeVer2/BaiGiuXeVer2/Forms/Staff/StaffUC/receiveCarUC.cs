@@ -58,5 +58,13 @@ namespace BaiGiuXeVer2.Forms.Staff.StaffUC
             else
                 return true;
         }
+
+        private void pic_bienso_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image (*.jpg,*.png,*.gif)|*.jpg,*.png,*.gif";
+            if ((opf.ShowDialog() == DialogResult.OK))
+                pic_bienso.Image = Image.FromFile(opf.FileName);
+        }
     }
 }
